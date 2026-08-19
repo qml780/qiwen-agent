@@ -35,7 +35,7 @@ Push-Location apps\api
 Pop-Location
 ```
 
-所有密钥只写入后端 `.env`，禁止放入 `NEXT_PUBLIC_*`、浏览器、Bridge、Unity 或版本库。完整变量和默认值见 `.env.example`。
+
 
 ## 一键运行
 
