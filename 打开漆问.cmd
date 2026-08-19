@@ -1,10 +1,5 @@
 @echo off
 chcp 65001 >nul
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\start-music-service.ps1"
-if errorlevel 1 (
-    pause
-    exit /b 1
-)
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\start-qiwen.ps1"
 if errorlevel 1 (
     pause

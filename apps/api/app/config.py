@@ -5,7 +5,8 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 # Provider 仍通过 os.getenv 读取，以便测试和部署覆盖；这里只在 Backend 进程加载根目录密钥。
-load_dotenv(Path(__file__).resolve().parents[3] / ".env", override=False)
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+load_dotenv(PROJECT_ROOT / ".env", override=False)
 
 
 class Settings(BaseSettings):
@@ -37,13 +38,13 @@ class Settings(BaseSettings):
     micu_code_input_cny_per_million: float = 0
     micu_code_output_cny_per_million: float = 0
     micu_estimated_cny_per_call: float = 0.1
-    object_storage_root: str = "D:\\游戏agent\\qiwen-verify\\storage\\objects"
+    object_storage_root: str = str(PROJECT_ROOT / "storage" / "objects")
 
-    web_public_root: str = "D:\\游戏agent\\qiwen-verify\\apps\\web\\public"
-    unity_project_path: str = "D:\\游戏agent\\qiwen-verify\\unity\\QIWEN-VerticalSlice"
+    web_public_root: str = str(PROJECT_ROOT / "apps" / "web" / "public")
+    unity_project_path: str = str(PROJECT_ROOT / "unity" / "QIWEN-VerticalSlice")
     local_bridge_url: str = "http://127.0.0.1:4567"
-    local_bridge_token_file: str = "D:\\游戏agent\\qiwen-verify\\runtime\\bridge\\bridge-token"
-    research_export_root: str = "D:\\游戏agent\\qiwen-verify\\exports\\research"
+    local_bridge_token_file: str = str(PROJECT_ROOT / "runtime" / "bridge" / "bridge-token")
+    research_export_root: str = str(PROJECT_ROOT / "exports" / "research")
 
     model_config = SettingsConfigDict(env_file=(".env", "../../.env"), extra="ignore")
 

@@ -8,7 +8,7 @@
 - `apps/api`：FastAPI、状态机、DeepSeek/媒体 Provider、研究导出。
 - `apps/bridge`：Node/TypeScript loopback Unity Bridge。
 - PostgreSQL：项目、版本、审批、对话、任务、Unity 回执和试玩记录。
-- `unity/QIWEN-VerticalSlice`：Unity 源工程；运行副本默认位于 D 盘。
+- `unity/QIWEN-VerticalSlice`：Unity 源工程。
 
 详细说明见 `ARCHITECTURE.md`、`LOCAL_BRIDGE.md` 与 `UNITY_ARCHITECTURE.md`。
 
@@ -23,14 +23,16 @@
 ## 安装与环境变量
 
 ```powershell
-cd E:\漆vr游戏
+git clone https://github.com/qml780/qiwen-agent.git
+cd qiwen-agent
 npm install
 Copy-Item .env.example .env
 Get-Content scripts\database\start-postgres.ps1 -Raw -Encoding UTF8 | Invoke-Expression
-Set-Location apps\api
 python -m venv .venv
-.venv\Scripts\python -m pip install -e .
-.venv\Scripts\python -m alembic upgrade head
+.venv\Scripts\python -m pip install -e apps\api
+Push-Location apps\api
+..\..\.venv\Scripts\python -m alembic upgrade head
+Pop-Location
 ```
 
 所有密钥只写入后端 `.env`，禁止放入 `NEXT_PUBLIC_*`、浏览器、Bridge、Unity 或版本库。完整变量和默认值见 `.env.example`。
@@ -46,21 +48,21 @@ python -m venv .venv
 后端：
 
 ```powershell
-cd E:\漆vr游戏\apps\api
-.venv\Scripts\python -m app.server
+cd qiwen-agent\apps\api
+..\..\.venv\Scripts\python -m app.server
 ```
 
 网页：
 
 ```powershell
-cd E:\漆vr游戏
+cd qiwen-agent
 npm run dev:web
 ```
 
 本地桥接：
 
 ```powershell
-cd E:\漆vr游戏\apps\bridge
+cd qiwen-agent\apps\bridge
 npm run build
 npm run start
 ```
@@ -83,7 +85,7 @@ Bridge 默认监听 `127.0.0.1:4567`，Unity MCP 默认监听 `127.0.0.1:8080/mc
 
 - PostgreSQL：`D:\qiwen-data\postgres18`，端口 `127.0.0.1:55432`。
 - 运行与证据：`D:\qiwen-runtime`。
-- 资产、备份和匿名研究导出：`E:\漆vr游戏` 下对应目录。
+- 素材、备份和研究导出：由 `.env` 中的路径变量配置，默认不提交到版本库。
 
 ```powershell
 Get-Content scripts\database\backup.ps1 -Raw -Encoding UTF8 | Invoke-Expression
@@ -98,7 +100,7 @@ npm run build:web
 apps\api\.venv\Scripts\python -m pytest apps\api\tests
 ```
 
-Unity 测试必须在可见编辑器中运行 EditMode 与 PlayMode，并读取 Console；模型文字不能替代测试证据。最终验收记录见 `MILESTONE_REPORT.md` 和 `docs/reports`。
+Unity 测试必须在可见编辑器中运行 EditMode 与 PlayMode，并读取 Console；模型文字不能替代测试证据。
 
 ## 常见问题
 

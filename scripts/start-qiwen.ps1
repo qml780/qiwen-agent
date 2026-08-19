@@ -11,6 +11,7 @@ $nodeCommand = (Get-Command node.exe -ErrorAction Stop).Source
 $databaseScriptPath = Join-Path $projectRoot "scripts\database\start-postgres.ps1"
 $musicScriptPath = Join-Path $projectRoot "scripts\start-music-service.ps1"
 $psql = "D:\qiwen-runtime\pgsql\bin\psql.exe"
+$musicExecutable = Join-Path $workspaceRoot "ACE-Step-1.5\.venv\Scripts\acestep-api.exe"
 
 # Windows PowerShell can expose PATH and Path as duplicate environment keys;
 # normalize the process environment before Start-Process creates child processes.
@@ -46,9 +47,11 @@ try {
 }
 if ($LASTEXITCODE -ne 0) { throw "Database migration failed." }
 
-# Music is a local dependency of the configured real provider. Start it before
-# the API so a one-click launch cannot leave the Music Studio disconnected.
-& $musicScriptPath
+# 音乐服务是可选组件；未安装时不应阻止网页、API 和 Unity 工作流启动。
+$musicAvailable = Test-Path -LiteralPath $musicExecutable
+if ($musicAvailable) {
+    & $musicScriptPath
+}
 
 $existingApi = Get-NetTCPConnection -State Listen -LocalPort 8000 -ErrorAction SilentlyContinue
 if ($existingApi) {
@@ -94,12 +97,12 @@ do {
     $apiReady = Get-NetTCPConnection -State Listen -LocalPort 8000 -ErrorAction SilentlyContinue
     $bridgeReady = Get-NetTCPConnection -State Listen -LocalPort 4567 -ErrorAction SilentlyContinue
     $musicReady = Get-NetTCPConnection -State Listen -LocalPort 8001 -ErrorAction SilentlyContinue
-    if ($webReady -and $apiReady -and $bridgeReady -and $musicReady) { break }
+    if ($webReady -and $apiReady -and $bridgeReady -and (-not $musicAvailable -or $musicReady)) { break }
     Start-Sleep -Milliseconds 400
 } while ((Get-Date) -lt $deadline)
 
 if (-not $webReady) { throw "Web startup timed out; check qiwen-web-error.log." }
 if (-not $apiReady) { throw "API startup timed out; check qiwen-api-error.log." }
 if (-not $bridgeReady) { throw "Local Bridge startup timed out; check qiwen-bridge-error.log." }
-if (-not $musicReady) { throw "Music service startup timed out; check ace-step-api-error.log." }
+if ($musicAvailable -and -not $musicReady) { throw "Music service startup timed out; check ace-step-api-error.log." }
 Start-Process "http://127.0.0.1:3000"
