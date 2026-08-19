@@ -1,0 +1,27 @@
+[project]
+name = "qiwen-api"
+version = "0.2.0"
+description = "QIWEN product backend, persistence, and provider boundary"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.116.1",
+  "httpx==0.28.1",
+  "pydantic-settings==2.10.1",
+  "SQLAlchemy==2.0.43",
+  "psycopg[binary]==3.2.9",
+  "alembic==1.16.5",
+  "volcengine==1.0.227",
+  "tencentcloud-sdk-python==3.1.153",
+  "uvicorn[standard]==0.35.0"
+]
+
+[project.optional-dependencies]
+test = ["pytest==8.4.1", "pytest-asyncio==1.1.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+exclude = ["migrations*", "tests*"]

@@ -1,0 +1,362 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1500" viewBox="0 0 2400 1500">
+<defs>
+<style>
+.bg{fill:#fff}.black{fill:#111}.dark{fill:#1d1d1d}.g0{fill:#fafafa}.g1{fill:#f3f3f3}.g2{fill:#e7e7e7}.g3{fill:#d5d5d5}
+.panel{fill:#fff;stroke:#171717;stroke-width:1.5}.soft{fill:#f7f7f7;stroke:#222;stroke-width:1.15}.dash{fill:#fff;stroke:#777;stroke-width:1.2;stroke-dasharray:6 6}
+.line{fill:none;stroke:#222;stroke-width:1.55}.thin{fill:none;stroke:#aaa;stroke-width:1}.dashed{fill:none;stroke:#666;stroke-width:1.3;stroke-dasharray:7 6}
+.t{font-family:'Microsoft YaHei','Noto Sans CJK SC',Arial,sans-serif;fill:#111}.w{font-family:'Microsoft YaHei','Noto Sans CJK SC',Arial,sans-serif;fill:#fff}.m{font-family:'Microsoft YaHei','Noto Sans CJK SC',Arial,sans-serif;fill:#666}
+.title{font-size:38px;font-weight:700}.h1{font-size:23px;font-weight:700}.h2{font-size:16px;font-weight:700}.body{font-size:14px}.small{font-size:12px}.micro{font-size:10px;font-weight:700;letter-spacing:1px}
+</style>
+<marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#222"/></marker>
+<marker id="ag" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#777"/></marker>
+</defs>
+
+<rect class="bg" width="2400" height="1500"/>
+
+<!-- 标题 -->
+<text class="t title" x="70" y="66">《漆问》｜反思式 Agent 辅助非遗游戏共创系统架构</text>
+<text class="m body" x="72" y="98">从权威漆艺知识、用户独立构思、人机共创，到多模态资产生成、Unity 构建与试玩反思的完整系统</text>
+<line x1="70" y1="120" x2="2330" y2="120" class="line"/>
+
+<rect class="black" x="70" y="150" width="2260" height="82" rx="10"/>
+<text class="w micro" x="96" y="179">核心系统逻辑</text>
+<text class="w h1" x="96" y="211">权威知识 → 用户独立构思 → Agent 反思与批评 → 玩家确认 → 资产生成 → Unity 实现 → 试玩与修改</text>
+<text class="w body" x="1940" y="203">AI 建议 · 人类决定</text>
+
+<!-- 01 知识基础 -->
+<text class="t h1" x="70" y="286">01  知识基础层</text>
+<text class="m small" x="260" y="286">知识提前采集、整理和核验，而非玩家使用时实时生成</text>
+
+<!-- 来源 -->
+<rect class="panel" x="70" y="315" width="545" height="350" rx="12"/>
+<text class="t micro" x="95" y="342">A / 知识来源</text>
+<text class="t h1" x="95" y="376">漆艺知识采集</text>
+
+<rect class="soft" x="95" y="404" width="145" height="65" rx="8"/>
+<text class="t h2" x="119" y="430">公开资料</text>
+<text class="m small" x="113" y="452">论文 / 书籍 / 馆藏</text>
+
+<rect class="soft" x="257" y="404" width="145" height="65" rx="8"/>
+<text class="t h2" x="289" y="430">官方资料</text>
+<text class="m small" x="278" y="452">非遗 / 博物馆 / 行业</text>
+
+<rect class="soft" x="419" y="404" width="170" height="65" rx="8"/>
+<text class="t h2" x="455" y="430">专家访谈</text>
+<text class="m small" x="438" y="452">传承人 / 制作人 / 专家</text>
+
+<line x1="168" y1="469" x2="168" y2="512" class="thin"/>
+<line x1="330" y1="469" x2="330" y2="512" class="thin"/>
+<line x1="504" y1="469" x2="504" y2="512" class="thin"/>
+<line x1="168" y1="512" x2="504" y2="512" class="thin"/>
+<line x1="336" y1="512" x2="336" y2="537" class="line" marker-end="url(#a)"/>
+
+<rect class="dark" x="178" y="540" width="316" height="64" rx="8"/>
+<text class="w h2" x="259" y="566">研究者整理与核验</text>
+<text class="w small" x="227" y="588">信息清洗 · 来源标注 · 专家审核 · 知识拆分</text>
+
+<line x1="336" y1="604" x2="336" y2="629" class="line" marker-end="url(#a)"/>
+<text class="m small" x="224" y="650">输出：可追溯、可复用的预制知识条目</text>
+
+<!-- 知识库结构 -->
+<rect class="panel" x="645" y="315" width="690" height="350" rx="12"/>
+<text class="t micro" x="670" y="342">B / 预制知识库</text>
+<text class="t h1" x="670" y="376">《漆问》知识库</text>
+
+<rect class="soft" x="670" y="403" width="185" height="94" rx="8"/>
+<text class="t h2" x="708" y="429">文化知识层</text>
+<text class="m small" x="690" y="453">材料 / 工艺 / 技法</text>
+<text class="m small" x="690" y="474">器物 / 历史 / 地域</text>
+
+<rect class="soft" x="875" y="403" width="205" height="94" rx="8"/>
+<text class="t h2" x="913" y="429">专家经验层</text>
+<text class="m small" x="895" y="453">常见错误 / 判断经验</text>
+<text class="m small" x="895" y="474">视觉 / 声音 / 触觉线索</text>
+
+<rect class="soft" x="1100" y="403" width="210" height="94" rx="8"/>
+<text class="t h2" x="1130" y="429">游戏可供性层</text>
+<text class="m small" x="1120" y="453">动作 / 变量 / 失败条件</text>
+<text class="m small" x="1120" y="474">机制方向 / 学习目标</text>
+
+<line x1="762" y1="497" x2="762" y2="535" class="thin"/>
+<line x1="978" y1="497" x2="978" y2="535" class="thin"/>
+<line x1="1205" y1="497" x2="1205" y2="535" class="thin"/>
+<line x1="762" y1="535" x2="1205" y2="535" class="thin"/>
+
+<rect class="black" x="768" y="553" width="448" height="71" rx="8"/>
+<text class="w h2" x="920" y="579">知识条目</text>
+<text class="w small" x="800" y="602">知识简介 · 工艺步骤 · 关键动作 · 常见误区 · 来源 · 游戏可供性</text>
+
+<!-- 玩家进入 -->
+<rect class="panel" x="1365" y="315" width="965" height="350" rx="12"/>
+<text class="t micro" x="1390" y="342">C / 玩家进入方式</text>
+<text class="t h1" x="1390" y="376">从知识浏览进入共创项目</text>
+
+<rect class="soft" x="1390" y="405" width="185" height="74" rx="8"/>
+<text class="t h2" x="1438" y="434">浏览知识</text>
+<text class="m small" x="1432" y="458">知识库 / 知识卡片</text>
+
+<line x1="1575" y1="442" x2="1620" y2="442" class="line" marker-end="url(#a)"/>
+
+<rect class="soft" x="1635" y="405" width="190" height="74" rx="8"/>
+<text class="t h2" x="1678" y="434">选择知识点</text>
+<text class="m small" x="1672" y="458">固定知识上下文</text>
+
+<line x1="1825" y1="442" x2="1870" y2="442" class="line" marker-end="url(#a)"/>
+
+<rect class="dark" x="1885" y="405" width="200" height="74" rx="8"/>
+<text class="w h2" x="1934" y="434">创建项目</text>
+<text class="w small" x="1916" y="458">建立独立创作空间</text>
+
+<line x1="2085" y1="442" x2="2125" y2="442" class="line" marker-end="url(#a)"/>
+
+<rect class="soft" x="2140" y="405" width="165" height="74" rx="8"/>
+<text class="t h2" x="2178" y="434">玩家先构思</text>
+<text class="m small" x="2172" y="458">保存原始想法</text>
+
+<rect class="dash" x="1390" y="522" width="915" height="104" rx="9"/>
+<text class="t h2" x="1413" y="549">关键研究设计：保留玩家最初构想</text>
+<text class="m body" x="1413" y="575">系统持续记录：原始想法 → Agent 提问与建议 → 玩家拒绝 / 接受 / 修改 → 最终游戏。</text>
+<text class="m small" x="1413" y="600">用于分析创意归属、作者感、Agent 影响、知识理解变化与人机共创过程。</text>
+
+<!-- 02 共创流程 -->
+<text class="t h1" x="70" y="720">02  人机共创流程</text>
+<text class="m small" x="295" y="720">Agent 不直接替用户设计；每个关键阶段都设置玩家确认节点</text>
+<line x1="105" y1="846" x2="2290" y2="846" class="line" stroke-width="2.2" marker-end="url(#a)"/>
+
+<g>
+<rect class="panel" x="70" y="770" width="220" height="145" rx="10"/>
+<text class="t micro" x="92" y="796">01 独立构思</text>
+<text class="t h2" x="92" y="826">玩家提出游戏想法</text>
+<text class="m small" x="92" y="853">玩法 / 世界观 / 核心体验</text>
+<text class="m small" x="92" y="876">Agent 此时不抢先设计</text>
+<rect class="g2" x="92" y="888" width="176" height="20" rx="4"/>
+<text class="t micro" x="119" y="902">保存原始创意</text>
+</g>
+
+<g>
+<rect class="panel" x="315" y="770" width="235" height="145" rx="10"/>
+<text class="t micro" x="337" y="796">02 反思对话</text>
+<text class="t h2" x="337" y="826">Agent 追问与批评</text>
+<text class="m small" x="337" y="853">理解 → 追问 → 指出问题</text>
+<text class="m small" x="337" y="876">接受 / 拒绝 / 修改</text>
+<text class="m small" x="337" y="899">多轮共创</text>
+</g>
+
+<g>
+<rect class="panel" x="575" y="770" width="245" height="145" rx="10"/>
+<text class="t micro" x="597" y="796">03 游戏概念</text>
+<text class="t h2" x="597" y="826">形成玩法方案</text>
+<text class="m small" x="597" y="853">核心机制 / 循环 / 世界观</text>
+<text class="m small" x="597" y="876">胜负条件 / 学习目标</text>
+<text class="m small" x="597" y="899">机制—知识一致性检查</text>
+</g>
+
+<g>
+<rect class="panel" x="845" y="770" width="230" height="145" rx="10"/>
+<text class="t micro" x="867" y="796">04 视觉生成</text>
+<text class="t h2" x="867" y="826">二维视觉工作台</text>
+<text class="m small" x="867" y="853">提示词 / 生成 / 变体</text>
+<text class="m small" x="867" y="876">预览 / 对比 / 保存</text>
+<text class="m small" x="867" y="899">玩家确认视觉方向</text>
+</g>
+
+<g>
+<rect class="panel" x="1100" y="770" width="230" height="145" rx="10"/>
+<text class="t micro" x="1122" y="796">05 三维生成</text>
+<text class="t h2" x="1122" y="826">三维素材工作台</text>
+<text class="m small" x="1122" y="853">文本 / 图片生成 3D</text>
+<text class="m small" x="1122" y="876">旋转 / 查看 / 多版本</text>
+<text class="m small" x="1122" y="899">玩家确认模型</text>
+</g>
+
+<g>
+<rect class="panel" x="1355" y="770" width="230" height="145" rx="10"/>
+<text class="t micro" x="1377" y="796">06 音乐生成</text>
+<text class="t h2" x="1377" y="826">音乐工作台</text>
+<text class="m small" x="1377" y="853">情绪 / 节奏 / 时长</text>
+<text class="m small" x="1377" y="876">试听 / 对比 / 保存</text>
+<text class="m small" x="1377" y="899">玩家确认 BGM</text>
+</g>
+
+<g>
+<rect class="panel" x="1610" y="770" width="235" height="145" rx="10"/>
+<text class="t micro" x="1632" y="796">07 游戏逻辑</text>
+<text class="t h2" x="1632" y="826">逻辑规格确认</text>
+<text class="m small" x="1632" y="853">输入 / 规则 / 交互 / 反馈</text>
+<text class="m small" x="1632" y="876">先解释，再生成代码</text>
+<text class="m small" x="1632" y="899">玩家批准后才编程</text>
+</g>
+
+<g>
+<rect class="panel" x="1870" y="770" width="220" height="145" rx="10"/>
+<text class="t micro" x="1892" y="796">08 UNITY 构建</text>
+<text class="t h2" x="1892" y="826">可见式游戏实现</text>
+<text class="m small" x="1892" y="853">Agent 搭建基础骨架</text>
+<text class="m small" x="1892" y="876">玩家参与素材组装</text>
+<text class="m small" x="1892" y="899">Unity 编辑器前台可见</text>
+</g>
+
+<g>
+<rect class="black" x="2115" y="770" width="215" height="145" rx="10"/>
+<text class="w micro" x="2137" y="796">09 试玩迭代</text>
+<text class="w h2" x="2137" y="826">试玩、反思与修改</text>
+<text class="w small" x="2137" y="853">试玩 → 反馈 → 修改</text>
+<text class="w small" x="2137" y="876">重新编译 → 再试玩</text>
+<text class="w small" x="2137" y="899">玩家最终确认完成</text>
+</g>
+
+<!-- 确认节点 -->
+<g>
+<rect class="black" x="294" y="831" width="21" height="30" rx="3"/><text class="w small" x="300" y="852">✓</text>
+<rect class="black" x="552" y="831" width="21" height="30" rx="3"/><text class="w small" x="558" y="852">✓</text>
+<rect class="black" x="822" y="831" width="21" height="30" rx="3"/><text class="w small" x="828" y="852">✓</text>
+<rect class="black" x="1077" y="831" width="21" height="30" rx="3"/><text class="w small" x="1083" y="852">✓</text>
+<rect class="black" x="1332" y="831" width="21" height="30" rx="3"/><text class="w small" x="1338" y="852">✓</text>
+<rect class="black" x="1587" y="831" width="21" height="30" rx="3"/><text class="w small" x="1593" y="852">✓</text>
+<rect class="black" x="1847" y="831" width="21" height="30" rx="3"/><text class="w small" x="1853" y="852">✓</text>
+<rect class="black" x="2092" y="831" width="21" height="30" rx="3"/><text class="w small" x="2098" y="852">✓</text>
+</g>
+
+<path d="M2220 915 C2220 963,1945 966,1945 918" class="dashed" marker-end="url(#ag)"/>
+<text class="m small" x="1990" y="955">修改代码 / 规则 / 资产</text>
+<path d="M1800 915 C1800 994,710 996,710 918" class="dashed" marker-end="url(#ag)"/>
+<text class="m small" x="1118" y="987">重大调整可返回玩法阶段，后续依赖自动标记“需要更新”</text>
+
+<!-- 03 系统架构 -->
+<text class="t h1" x="70" y="1055">03  系统架构与执行链路</text>
+
+<!-- 前台 -->
+<rect class="panel" x="70" y="1085" width="460" height="350" rx="12"/>
+<text class="t micro" x="95" y="1113">前台创作界面</text>
+<text class="t h1" x="95" y="1147">《漆问》创作工作台</text>
+<text class="m small" x="95" y="1171">桌面优先的 Web 创作界面</text>
+
+<rect class="soft" x="95" y="1200" width="126" height="65" rx="8"/>
+<text class="t h2" x="123" y="1226">知识 / 素材</text>
+<text class="m small" x="117" y="1248">左侧资源栏</text>
+
+<rect class="soft" x="236" y="1200" width="132" height="65" rx="8"/>
+<text class="t h2" x="258" y="1226">创作空间</text>
+<text class="m small" x="258" y="1248">当前工作区</text>
+
+<rect class="soft" x="383" y="1200" width="122" height="65" rx="8"/>
+<text class="t h2" x="407" y="1226">Agent</text>
+<text class="m small" x="400" y="1248">右侧共创栏</text>
+
+<rect class="g2" x="95" y="1290" width="410" height="52" rx="8"/>
+<text class="t h2" x="115" y="1313">项目进度 + 玩家确认状态</text>
+<text class="m small" x="115" y="1333">所有阶段、版本、确认和“需要更新”状态持续可见</text>
+
+<rect class="dash" x="95" y="1360" width="410" height="48" rx="8"/>
+<text class="t small" x="116" y="1388">素材库：图片 · 3D · 音乐 · UI · 代码 · 场景</text>
+
+<!-- Agent 层 -->
+<rect class="panel" x="560" y="1085" width="660" height="350" rx="12"/>
+<text class="t micro" x="585" y="1113">AGENT 与状态控制层</text>
+<text class="t h1" x="585" y="1147">Agent 调度与反思机制</text>
+
+<rect class="black" x="585" y="1178" width="610" height="68" rx="8"/>
+<text class="w h2" x="610" y="1205">DeepSeek API</text>
+<text class="w small" x="610" y="1228">对话 · 知识解释 · 游戏设计 · C# 代码生成 · 调试与修复</text>
+
+<rect class="soft" x="585" y="1267" width="182" height="65" rx="8"/>
+<text class="t h2" x="610" y="1293">知识 Agent</text>
+<text class="m small" x="618" y="1315">知识检索 / 上下文</text>
+
+<rect class="soft" x="782" y="1267" width="190" height="65" rx="8"/>
+<text class="t h2" x="813" y="1293">设计 Agent</text>
+<text class="m small" x="804" y="1315">知识 → 游戏机制</text>
+
+<rect class="soft" x="987" y="1267" width="208" height="65" rx="8"/>
+<text class="t h2" x="1016" y="1293">Unity 构建 Agent</text>
+<text class="m small" x="1023" y="1315">工具调用 / 代码 / 修复</text>
+
+<rect class="g2" x="585" y="1354" width="187" height="53" rx="8"/>
+<text class="t h2" x="609" y="1378">玩家确认节点</text>
+<text class="m small" x="614" y="1398">最终决定权</text>
+
+<rect class="g2" x="787" y="1354" width="186" height="53" rx="8"/>
+<text class="t h2" x="817" y="1378">状态机</text>
+<text class="m small" x="815" y="1398">阶段流转控制</text>
+
+<rect class="g2" x="988" y="1354" width="207" height="53" rx="8"/>
+<text class="t h2" x="1020" y="1378">版本与过程记录</text>
+<text class="m small" x="1014" y="1398">共创轨迹 / 研究数据</text>
+
+<!-- 资产生成层 -->
+<rect class="panel" x="1250" y="1085" width="500" height="350" rx="12"/>
+<text class="t micro" x="1275" y="1113">多模态生成层</text>
+<text class="t h1" x="1275" y="1147">游戏资产生成服务</text>
+
+<rect class="soft" x="1275" y="1180" width="142" height="70" rx="8"/>
+<text class="t h2" x="1310" y="1207">二维图像</text>
+<text class="m small" x="1297" y="1229">Mock / 真实模型</text>
+
+<rect class="soft" x="1430" y="1180" width="142" height="70" rx="8"/>
+<text class="t h2" x="1460" y="1207">混元 3D</text>
+<text class="m small" x="1455" y="1229">文本 / 图片生成</text>
+
+<rect class="soft" x="1585" y="1180" width="140" height="70" rx="8"/>
+<text class="t h2" x="1613" y="1207">音乐生成</text>
+<text class="m small" x="1595" y="1229">ElevenLabs Music v2</text>
+
+<line x1="1346" y1="1250" x2="1346" y2="1282" class="thin"/>
+<line x1="1501" y1="1250" x2="1501" y2="1282" class="thin"/>
+<line x1="1655" y1="1250" x2="1655" y2="1282" class="thin"/>
+<line x1="1346" y1="1282" x2="1655" y2="1282" class="thin"/>
+<line x1="1500" y1="1282" x2="1500" y2="1302" class="line" marker-end="url(#a)"/>
+
+<rect class="black" x="1307" y="1303" width="386" height="62" rx="8"/>
+<text class="w h2" x="1410" y="1329">持续积累的素材库</text>
+<text class="w small" x="1350" y="1351">项目素材 + 个人素材库 + 多版本管理 + 跨项目复用</text>
+
+<rect class="dash" x="1307" y="1380" width="386" height="28" rx="5"/>
+<text class="t micro" x="1387" y="1398">先 Mock 跑通，再替换真实 API</text>
+
+<!-- Unity -->
+<rect class="panel" x="1780" y="1085" width="550" height="350" rx="12"/>
+<text class="t micro" x="1805" y="1113">本地执行层</text>
+<text class="t h1" x="1805" y="1147">Unity 游戏构建闭环</text>
+
+<rect class="soft" x="1805" y="1180" width="145" height="58" rx="8"/>
+<text class="t h2" x="1830" y="1215">《漆问》前台</text>
+
+<line x1="1950" y1="1209" x2="1995" y2="1209" class="line" marker-end="url(#a)"/>
+
+<rect class="soft" x="2008" y="1180" width="145" height="58" rx="8"/>
+<text class="t h2" x="2031" y="1205">本地桥接服务</text>
+<text class="m small" x="2038" y="1224">Node / TypeScript</text>
+
+<line x1="2153" y1="1209" x2="2188" y2="1209" class="line" marker-end="url(#a)"/>
+
+<rect class="dark" x="2200" y="1180" width="105" height="58" rx="8"/>
+<text class="w h2" x="2219" y="1205">Unity</text>
+<text class="w small" x="2216" y="1224">MCP</text>
+
+<line x1="2253" y1="1238" x2="2253" y2="1278" class="line" marker-end="url(#a)"/>
+
+<rect class="black" x="1805" y="1280" width="500" height="72" rx="8"/>
+<text class="w h2" x="1943" y="1307">Unity 编辑器</text>
+<text class="w small" x="1838" y="1332">创建场景 · 导入素材 · 生成脚本 · 编译 · 运行 · 读取报错 · 修复</text>
+
+<line x1="2055" y1="1352" x2="2055" y2="1376" class="line" marker-end="url(#a)"/>
+
+<rect class="soft" x="1805" y="1378" width="155" height="34" rx="6"/>
+<text class="t small" x="1832" y="1400">构建进度</text>
+
+<rect class="soft" x="1975" y="1378" width="155" height="34" rx="6"/>
+<text class="t small" x="2000" y="1400">控制台 / 报错</text>
+
+<rect class="soft" x="2145" y="1378" width="160" height="34" rx="6"/>
+<text class="t small" x="2170" y="1400">人工接管</text>
+
+<!-- 横向连接 -->
+<path d="M530 1260 C545 1260,545 1260,560 1260" class="line" marker-end="url(#a)"/>
+<path d="M1220 1260 C1230 1260,1240 1260,1250 1260" class="line" marker-end="url(#a)"/>
+<path d="M1750 1260 C1762 1260,1770 1260,1780 1260" class="line" marker-end="url(#a)"/>
+
+<!-- 底部研究输出 -->
+<rect class="g1" x="70" y="1453" width="2260" height="29" rx="5"/>
+<text class="t small" x="94" y="1473">研究输出 → 原始想法 · Agent 提问 / 建议 · 接受 / 拒绝 / 修改 · 确认记录 · 资产迭代 · 机制—知识一致性 · Unity 操作 · 试玩反馈 · 最终游戏</text>
+
+</svg>

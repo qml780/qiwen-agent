@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#fff"/>
+  <rect x="4" y="4" width="56" height="56" fill="none" stroke="#000" stroke-width="4"/>
+  <text x="32" y="43" text-anchor="middle" font-family="serif" font-size="38" fill="#000">漆</text>
+</svg>

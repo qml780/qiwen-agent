@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1050" viewBox="0 0 2200 1050">
+<defs>
+<style>
+text{font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",sans-serif;fill:#111}
+.h1{font-size:36px;font-weight:700}.h2{font-size:22px;font-weight:700}.h3{font-size:17px;font-weight:700}
+.b{font-size:14px}.s{font-size:12px;fill:#444}.xs{font-size:11px;fill:#555}
+.box{fill:#fff;stroke:#111;stroke-width:1.5}.gray{fill:#f4f4f4;stroke:#111;stroke-width:1.4}.black{fill:#111}
+.white{fill:#fff!important}.line{stroke:#111;stroke-width:1.6;fill:none}.thin{stroke:#111;stroke-width:1.1;fill:none}
+.dash{stroke:#111;stroke-width:1.2;stroke-dasharray:7 6;fill:none}
+</style>
+<marker id="a" markerWidth="10" markerHeight="10" refX="8.5" refY="3.5" orient="auto"><path d="M0 0L9 3.5L0 7Z" fill="#111"/></marker>
+</defs>
+<rect width="2200" height="1050" fill="#fff"/>
+
+<!-- title -->
+<text class="h1" x="60" y="62">CORE PROBLEM · GAME SYSTEM</text>
+<text class="h2" x="60" y="100">《漆》游戏部分核心问题｜如何让更多人从“观看漆艺”走向“参与制作”</text>
+<line x1="60" y1="130" x2="2140" y2="130" stroke="#111" stroke-width="2.6"/>
+
+<!-- Layer labels -->
+<rect x="60" y="165" width="155" height="38" rx="19" class="black"/><text class="h3 white" x="92" y="190">问题形成</text>
+<rect x="60" y="450" width="155" height="38" rx="19" class="black"/><text class="h3 white" x="92" y="475">核心转译</text>
+<rect x="60" y="760" width="155" height="38" rx="19" class="black"/><text class="h3 white" x="92" y="785">游戏回应</text>
+
+<!-- Problem formation: two input streams -->
+<rect x="260" y="165" width="250" height="105" rx="12" class="gray"/>
+<text class="h3" x="290" y="198">传播方式</text>
+<text class="b" x="290" y="226">展览 / 影像 / 图文介绍</text>
+<text class="s" x="290" y="250">以观看、接收文化信息为主</text>
+
+<rect x="260" y="295" width="250" height="105" rx="12" class="box"/>
+<text class="h3" x="290" y="328">真实制作</text>
+<text class="b" x="290" y="356">材料 / 工序 / 时间 / 环境</text>
+<text class="s" x="290" y="380">需要持续实践才能完整体验</text>
+
+<path d="M510 217 C560 217 570 250 620 270" class="line" marker-end="url(#a)"/>
+<path d="M510 347 C560 347 570 310 620 290" class="line" marker-end="url(#a)"/>
+
+<rect x="630" y="205" width="310" height="155" rx="14" class="black"/>
+<text class="s white" x="665" y="235">EXPERIENCE GAP</text>
+<text class="h2 white" x="665" y="272">“看见漆艺”</text>
+<text class="h2 white" x="665" y="304">却没有“经历制作”</text>
+<line x1="665" y1="324" x2="905" y2="324" stroke="#fff"/>
+<text class="s white" x="665" y="347">文化认知与制作体验之间出现断层</text>
+
+<!-- three consequences -->
+<path d="M940 282 H1000" class="line"/>
+<path d="M1000 282 V185 H1040" class="line" marker-end="url(#a)"/>
+<path d="M1000 282 H1040" class="line" marker-end="url(#a)"/>
+<path d="M1000 282 V380 H1040" class="line" marker-end="url(#a)"/>
+
+<rect x="1050" y="145" width="280" height="95" rx="12" class="gray"/>
+<text class="h3" x="1080" y="180">工序不可感知</text>
+<text class="b" x="1080" y="207">难理解“如何一步步做出来”</text>
+
+<rect x="1050" y="255" width="280" height="95" rx="12" class="box"/>
+<text class="h3" x="1080" y="290">操作经验缺失</text>
+<text class="b" x="1080" y="317">无法形成材料与动作的关联</text>
+
+<rect x="1050" y="365" width="280" height="95" rx="12" class="gray"/>
+<text class="h3" x="1080" y="400">文化记忆停留在观看</text>
+<text class="b" x="1080" y="427">参与者难进入“制作”的角色</text>
+
+<!-- convergence -->
+<path d="M1330 192 C1380 192 1390 270 1440 280" class="thin"/>
+<path d="M1330 302 H1440" class="thin"/>
+<path d="M1330 412 C1380 412 1390 330 1440 320" class="thin"/>
+<circle cx="1455" cy="300" r="18" class="black"/>
+<line x1="1473" y1="300" x2="1535" y2="300" class="line" marker-end="url(#a)"/>
+
+<!-- core question -->
+<rect x="1545" y="185" width="565" height="230" rx="18" class="black"/>
+<text class="s white" x="1585" y="220">CORE QUESTION · HOW MIGHT WE</text>
+<text class="h2 white" x="1585" y="263">如何让更多人通过“参与制作”</text>
+<text class="h2 white" x="1585" y="299">真正进入漆艺文化？</text>
+<line x1="1585" y1="326" x2="2070" y2="326" stroke="#fff"/>
+<text class="b white" x="1585" y="356">不是把复杂工艺简化成“知识介绍”，</text>
+<text class="b white" x="1585" y="383">而是把制作过程转译为可进入、可操作、可完成的体验。</text>
+
+<!-- Translation layer -->
+<path d="M1825 415 V470" class="line" marker-end="url(#a)"/>
+<rect x="280" y="500" width="1540" height="205" rx="16" class="gray"/>
+<text class="h2" x="315" y="538">设计转译原则 / FROM CRAFT TO GAME</text>
+
+<!-- four translation columns -->
+<rect x="330" y="565" width="300" height="105" rx="10" class="box"/>
+<text class="h3" x="360" y="598">① 工艺知识</text>
+<text class="b" x="360" y="626">工序顺序 / 配方 / 环境条件</text>
+<text class="s" x="360" y="650">回答“需要知道什么”</text>
+
+<line x1="630" y1="617" x2="690" y2="617" class="line" marker-end="url(#a)"/>
+
+<rect x="700" y="565" width="300" height="105" rx="10" class="box"/>
+<text class="h3" x="730" y="598">② 制作动作</text>
+<text class="b" x="730" y="626">采集 / 调配 / 涂刷 / 修复</text>
+<text class="s" x="730" y="650">回答“玩家需要做什么”</text>
+
+<line x1="1000" y1="617" x2="1060" y2="617" class="line" marker-end="url(#a)"/>
+
+<rect x="1070" y="565" width="300" height="105" rx="10" class="box"/>
+<text class="h3" x="1100" y="598">③ 游戏机制</text>
+<text class="b" x="1100" y="626">解谜 / 射击 / 操作 / 调节</text>
+<text class="s" x="1100" y="650">把工艺动作变成可玩的任务</text>
+
+<line x1="1370" y1="617" x2="1430" y2="617" class="line" marker-end="url(#a)"/>
+
+<rect x="1440" y="565" width="330" height="105" rx="10" class="black"/>
+<text class="h3 white" x="1470" y="598">④ 参与式制作体验</text>
+<text class="b white" x="1470" y="626">操作 → 反馈 → 完成当前工序</text>
+<text class="s white" x="1470" y="650">从“观看结果”转向“经历过程”</text>
+
+<!-- Game response complex flow -->
+<path d="M1050 705 V750" class="line" marker-end="url(#a)"/>
+
+<rect x="260" y="815" width="210" height="95" rx="12" class="box"/>
+<text class="h3" x="300" y="850">探索祖宅</text>
+<text class="s" x="292" y="880">寻找书籍与场景线索</text>
+
+<line x1="470" y1="862" x2="520" y2="862" class="line" marker-end="url(#a)"/>
+
+<rect x="530" y="815" width="220" height="95" rx="12" class="gray"/>
+<text class="h3" x="570" y="850">书籍顺序解谜</text>
+<text class="s" x="568" y="880">确定正确工艺顺序</text>
+
+<line x1="750" y1="862" x2="800" y2="862" class="line" marker-end="url(#a)"/>
+
+<rect x="810" y="815" width="210" height="95" rx="12" class="black"/>
+<text class="h3 white" x="858" y="850">解锁工序</text>
+<text class="s white" x="842" y="880">进入对应制作任务</text>
+
+<!-- branch -->
+<line x1="1020" y1="862" x2="1080" y2="862" class="line"/>
+<circle cx="1095" cy="862" r="15" class="black"/>
+<path d="M1110 862 C1150 820 1170 800 1210 795" class="line" marker-end="url(#a)"/>
+<path d="M1110 862 H1210" class="line" marker-end="url(#a)"/>
+<path d="M1110 862 C1150 905 1170 925 1210 930" class="line" marker-end="url(#a)"/>
+
+<rect x="1220" y="755" width="240" height="72" rx="10" class="box"/>
+<text class="h3" x="1250" y="784">材料 / 采漆</text>
+<text class="s" x="1250" y="808">射击采集 · 时间/角度/位置</text>
+
+<rect x="1220" y="840" width="240" height="72" rx="10" class="gray"/>
+<text class="h3" x="1250" y="869">工艺制作</text>
+<text class="s" x="1250" y="893">点击 · 连续操作 · 声音反馈</text>
+
+<rect x="1220" y="925" width="240" height="72" rx="10" class="box"/>
+<text class="h3" x="1250" y="954">配方 / 修复 / 环境</text>
+<text class="s" x="1250" y="978">调配 · 推理 · 湿温光调节</text>
+
+<!-- merge -->
+<path d="M1460 791 C1510 791 1520 850 1570 862" class="thin"/>
+<path d="M1460 876 H1570" class="thin"/>
+<path d="M1460 961 C1510 961 1520 900 1570 878" class="thin"/>
+<circle cx="1585" cy="870" r="15" class="black"/>
+<line x1="1600" y1="870" x2="1650" y2="870" class="line" marker-end="url(#a)"/>
+
+<rect x="1660" y="815" width="210" height="110" rx="12" class="black"/>
+<text class="h3 white" x="1700" y="850">完成当前工序</text>
+<text class="s white" x="1692" y="878">获得反馈 / 推进流程</text>
+<text class="s white" x="1705" y="900">参与一次“制作”</text>
+
+<line x1="1870" y1="870" x2="1920" y2="870" class="line" marker-end="url(#a)"/>
+<rect x="1930" y="815" width="190" height="110" rx="12" class="gray"/>
+<text class="h3" x="1965" y="850">完成漆器</text>
+<text class="s" x="1958" y="878">从观看者</text>
+<text class="s" x="1958" y="900">转向制作参与者</text>
+
+<!-- loop -->
+<path d="M1765 925 C1765 1010 650 1020 640 925" class="dash" marker-end="url(#a)"/>
+<text class="s" x="1030" y="1012">下一工序 / 新线索 / 新制作任务 · 循环推进</text>
+</svg>

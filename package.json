@@ -1,0 +1,21 @@
+{
+  "name": "qiwen-studio",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "npm@11.6.2",
+  "workspaces": ["apps/web", "apps/bridge"],
+  "scripts": {
+    "dev:web": "npm --workspace @qiwen/web run dev",
+    "build:web": "npm --workspace @qiwen/web run build",
+    "lint:web": "npm --workspace @qiwen/web run lint",
+    "typecheck:web": "npm --workspace @qiwen/web run typecheck",
+    "test:web": "npm --workspace @qiwen/web run test",
+    "dev:bridge": "npm --workspace @qiwen/bridge run dev",
+    "build:bridge": "npm --workspace @qiwen/bridge run build",
+    "test:bridge": "npm --workspace @qiwen/bridge run test",
+    "generate:demo-glb": "node scripts/generate-demo-glb.mjs"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "4.2.1"
+  }
+}

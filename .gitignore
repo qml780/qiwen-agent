@@ -1,0 +1,71 @@
+node_modules/
+node_modules.incomplete-*/
+.next/
+.next*/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+*.egg-info/
+*.tsbuildinfo
+storage/
+backups/*.dump
+*.incomplete-*/
+
+# Local credentials, bridge tokens, generated evidence and runtime output
+runtime/
+exports/
+evidence/
+logs/
+*.log
+*.out.log
+*.err.log
+
+# Root-level research originals and large binary working files are not source.
+# Runtime assets required by the app live under apps/web/public and Unity Assets.
+/*.zip
+/*.mp4
+/*.fbx
+/*.wav
+/*.png
+/*.jpg
+/*.jpeg
+/*.docx
+/*.pptx
+/1593f565f9efca2b451e577fab52e54e/
+/4eefc978586be18dadb0ac6963e8d13e/
+/66cdec7bdc27d182394cf731e9377391/
+/902b04951a6e681e3bb1ad161af19b0d/
+/90e62a41c99718b2ef054b08d959be09/
+/a839c46686ccf0953d5d692d45a99a4d/
+/bc2591003323860b3090b83e88f1842d/
+/期末作业-漆问-2023080150漆曼伶2023080129王小雅/
+/CHI论文/
+
+# Unity local caches, backups and per-run generated inputs/checkpoints
+unity/**/Library*/
+unity/**/Temp/
+unity/**/Logs/
+unity/**/UserSettings/
+unity/**/obj/
+unity/**/VendorCache/
+unity/**/New Unity Project/
+unity/**/Assets/_Recovery/
+unity/**/Assets/QIWEN/Input/
+unity/**/Assets/QIWEN/Checkpoints/
+unity/**/Assets/QIWEN/Requests/
+unity/**/QIWEN/CoCreation/
+unity/**/QIWEN/Results/
+unity/**/QIWEN/State/
+unity/**/QIWEN/TemplateReceipts/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.user
+*.suo

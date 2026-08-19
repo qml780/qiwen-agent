@@ -1,0 +1,8 @@
+{
+  "name": "QIWEN.GameTemplates.PlayModeTests",
+  "rootNamespace": "QIWEN.GameTemplates.Tests",
+  "references": ["QIWEN.GameTemplates"],
+  "includePlatforms": [],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

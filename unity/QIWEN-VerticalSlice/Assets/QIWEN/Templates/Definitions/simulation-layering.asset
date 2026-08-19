@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b19f197170350d645aad29f98cbf60dc, type: 3}
+  m_Name: simulation-layering
+  m_EditorClassIdentifier: QIWEN.GameTemplates::QIWEN.GameTemplates.GameTemplateDefinition
+  templateId: simulation-layering
+  displayName: "\u6A21\u62DF\xB7\u8584\u9AF9\u5C42\u79EF"
+  culturalAffordance: "\u8584\u9AF9\u9700\u8981\u9010\u5C42\u6D82\u5E03\u3001\u9634\u5E72\u4E0E\u6253\u78E8\uFF1B\u5C42\u6570\u589E\u52A0\u4F1A\u79EF\u7D2F\u65F6\u95F4\u4E0E\u8868\u9762\u98CE\u9669\u3002"
+  inputMode: "\u70B9\u51FB\u9AF9\u6D82\uFF0C\u51C6\u5907\u8868\u9762\uFF0C\u5FC5\u8981\u65F6\u6253\u78E8\u7F3A\u9677"
+  winCondition: "\u5B8C\u6210\u4E09\u5C42\u4E14\u8868\u9762\u7F3A\u9677\u4E3A\u96F6"
+  componentType: QIWEN.GameTemplates.LayeringSimulationTemplate
+  schemaVersion: 1

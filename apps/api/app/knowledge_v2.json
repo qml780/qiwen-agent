@@ -1,0 +1,1746 @@
+{
+  "database_name": "QIWEN 漆艺知识库 V2",
+  "language": "zh-CN",
+  "version": "2.0",
+  "editorial_rules": [
+    "每条知识至少包含：核心解释、事实、因果、动作、常见误解、可游戏化变量、学习目标、来源。",
+    "不把地方经验写成全国统一标准。",
+    "不把单篇论文中的成分百分比、温湿度或工序次数写成绝对常数。",
+    "AI插图只能作为示意图，必须标注AI生成，不得冒充历史文物、考古照片、传承人肖像。",
+    "game_affordances仅供Agent检查和追问，不得在玩家独立构思前直接推荐游戏类型。",
+    "正式论文实验使用的知识点必须经过漆艺专家复核。"
+  ],
+  "entries": [
+    {
+      "id": "MAT-001",
+      "title": "什么是大漆 / 生漆",
+      "category": "材料基础",
+      "summary": "大漆（生漆、天然漆）是从漆树韧皮部采割得到的天然树液，经处理后可作为涂饰、黏结和保护材料。它不是现代合成油漆。",
+      "core_facts": [
+        "漆树是重要经济林树种。",
+        "漆液初采时常呈乳白至灰黄色，随后因氧化逐渐变深。",
+        "传统漆可施于木、竹、布、纸、皮、金属等胎体。"
+      ],
+      "cause_effect_relations": [
+        "漆酚等组分在漆酶与氧参与下发生聚合，逐步形成漆膜。",
+        "最终性能与原料、处理、膜厚、温湿度和养护共同相关。"
+      ],
+      "key_actions": [
+        "识别天然生漆",
+        "观察树液到漆膜的状态变化"
+      ],
+      "common_misconceptions": [
+        "大漆就是黑色油漆。",
+        "天然材料就一定无刺激。"
+      ],
+      "game_affordances": [
+        "材料辨识",
+        "状态变化",
+        "材料管理"
+      ],
+      "learning_objectives": [
+        "理解大漆的来源、材料本质与成膜特征。"
+      ],
+      "references": [
+        {
+          "title": "国家林草局漆树",
+          "url": "https://www.forestry.gov.cn/c/www/smcqzt/20556.jhtml"
+        },
+        {
+          "title": "故宫漆器",
+          "url": "https://www.dpm.org.cn/collection/lacquerwares.html"
+        },
+        {
+          "title": "Polymers固化综述",
+          "url": "https://www.mdpi.com/2073-4360/17/12/1596"
+        }
+      ],
+      "image_prompt_zh": "白底黑白科学插画，漆树割口渗出乳白色树液，右侧显示树液→深色液体→硬化漆膜三个阶段。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "MAT-002",
+      "title": "生漆是一种多组分天然体系",
+      "category": "材料基础",
+      "summary": "天然生漆不是单一物质，而是复杂乳液体系，主要研究组分包括漆酚、水、漆酶、多糖和糖蛋白等。",
+      "core_facts": [
+        "不同树种、产地、季节与处理方式会导致成分比例变化。",
+        "文献中的百分比应作为特定样品数据，而非所有生漆的固定常数。"
+      ],
+      "cause_effect_relations": [
+        "漆酚负责主要成膜；漆酶参与早期氧化；水和其他组分影响体系结构与固化。"
+      ],
+      "key_actions": [
+        "比较不同批次",
+        "观察黏度和含水状态"
+      ],
+      "common_misconceptions": [
+        "把一个论文中的成分比例当全国统一标准。"
+      ],
+      "game_affordances": [
+        "配方平衡",
+        "批次差异",
+        "质量判断"
+      ],
+      "learning_objectives": [
+        "理解天然漆是多组分协同材料。"
+      ],
+      "references": [
+        {
+          "title": "Polymers固化综述",
+          "url": "https://www.mdpi.com/2073-4360/17/12/1596"
+        },
+        {
+          "title": "Getty硬化",
+          "url": "https://www.getty.edu/conservation/publications_resources/pdf_publications/pdf/urushi3.pdf"
+        }
+      ],
+      "image_prompt_zh": "黑白液滴剖面信息图，标注漆酚、水、漆酶、多糖、糖蛋白。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "MAT-003",
+      "title": "漆酚：成膜核心与过敏风险",
+      "category": "材料基础",
+      "summary": "漆酚是天然漆的重要酚类成分，同时与天然漆的成膜和接触性过敏密切相关。",
+      "core_facts": [
+        "漆酚能够发生氧化与聚合。",
+        "未固化漆液对部分人可造成明显皮肤过敏反应。"
+      ],
+      "cause_effect_relations": [
+        "漆酚氧化聚合→形成网络结构；皮肤接触未固化漆酚→可能触发免疫性皮炎。"
+      ],
+      "key_actions": [
+        "避免徒手接触未固化生漆",
+        "规范防护"
+      ],
+      "common_misconceptions": [
+        "天然=绝对安全。",
+        "过敏只是心理作用。"
+      ],
+      "game_affordances": [
+        "安全装备",
+        "风险管理",
+        "化学反应链"
+      ],
+      "learning_objectives": [
+        "理解漆酚的双重角色：成膜与过敏。"
+      ],
+      "references": [
+        {
+          "title": "Polymers固化综述",
+          "url": "https://www.mdpi.com/2073-4360/17/12/1596"
+        },
+        {
+          "title": "Polymers过敏物质",
+          "url": "https://www.mdpi.com/2073-4360/17/13/1722"
+        }
+      ],
+      "image_prompt_zh": "黑白分子示意图，漆酚结构→聚合网络，同时连接手套警示图标。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "MAT-004",
+      "title": "为什么天然漆需要‘阴干’",
+      "category": "材料基础",
+      "summary": "天然漆早期固化依赖漆酶参与的氧化过程，因此传统工艺常在适宜温湿度、避免强烈直吹与暴晒的环境中让漆层逐步硬化。",
+      "core_facts": [
+        "固化不是普通的溶剂挥发。",
+        "温度、湿度、氧气、膜厚和漆液状态共同影响固化。"
+      ],
+      "cause_effect_relations": [
+        "适宜水分与温度→漆酶保持活性→漆酚氧化聚合→漆膜形成。"
+      ],
+      "key_actions": [
+        "控制荫房",
+        "等待",
+        "检查表面状态"
+      ],
+      "common_misconceptions": [
+        "太阳暴晒一定干得更好。",
+        "高温猛烤一定能加速且不影响质量。"
+      ],
+      "game_affordances": [
+        "环境控制",
+        "等待机制",
+        "质量判断"
+      ],
+      "learning_objectives": [
+        "理解‘干燥’其实是复杂固化过程。"
+      ],
+      "references": [
+        {
+          "title": "Polymers固化综述",
+          "url": "https://www.mdpi.com/2073-4360/17/12/1596"
+        },
+        {
+          "title": "Getty硬化",
+          "url": "https://www.getty.edu/conservation/publications_resources/pdf_publications/pdf/urushi3.pdf"
+        }
+      ],
+      "image_prompt_zh": "黑白荫房剖面，器物置于湿润柜中，空气、水分、温度共同作用。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "MAT-005",
+      "title": "温湿度不是一个死数字",
+      "category": "材料基础",
+      "summary": "天然漆固化对温湿度敏感，但不同膜厚、漆种与工艺目的的适宜条件并不完全相同。知识库不应把一个实验值写成普适标准答案。",
+      "core_facts": [
+        "部分研究常在20–30℃和较高湿度条件下研究天然漆固化。",
+        "Getty研究表明膜厚与相对湿度会共同影响硬化速度、透明度和均匀性。"
+      ],
+      "cause_effect_relations": [
+        "湿度过低可能导致硬化过慢；过高且膜厚不匹配时又可能产生水分滞留与外观变化。"
+      ],
+      "key_actions": [
+        "判断环境",
+        "结合膜厚决定等待"
+      ],
+      "common_misconceptions": [
+        "越湿越好。",
+        "存在一个所有工艺都通用的最佳温湿度。"
+      ],
+      "game_affordances": [
+        "多变量判断",
+        "动态环境",
+        "阈值策略"
+      ],
+      "learning_objectives": [
+        "学会解释为什么漆工依赖经验而不是死记参数。"
+      ],
+      "references": [
+        {
+          "title": "Polymers固化综述",
+          "url": "https://www.mdpi.com/2073-4360/17/12/1596"
+        },
+        {
+          "title": "Getty硬化",
+          "url": "https://www.getty.edu/conservation/publications_resources/pdf_publications/pdf/urushi3.pdf"
+        }
+      ],
+      "image_prompt_zh": "黑白温度计×湿度计×薄厚漆膜关系图。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "MAT-006",
+      "title": "薄涂、等待、反复髹涂",
+      "category": "基础工艺",
+      "summary": "高质量漆面通常由多道薄层髹涂、阴干和研磨逐渐建立，而不是一次厚涂完成。",
+      "core_facts": [
+        "雕漆需要积累厚漆层后才能雕刻。",
+        "螺钿等工艺也需要反复髹漆与水磨。"
+      ],
+      "cause_effect_relations": [
+        "一次过厚→内外固化不一致与缺陷风险上升；多层薄涂→每层更易控制→逐步形成稳定平整表面。"
+      ],
+      "key_actions": [
+        "薄涂",
+        "等待",
+        "检查",
+        "打磨",
+        "重复"
+      ],
+      "common_misconceptions": [
+        "一次厚涂更省工且效果完全一样。"
+      ],
+      "game_affordances": [
+        "循环",
+        "厚度控制",
+        "节奏",
+        "失误反馈"
+      ],
+      "learning_objectives": [
+        "通过操作理解‘薄、匀、等、反复’。"
+      ],
+      "references": [
+        {
+          "title": "故宫剔红",
+          "url": "https://www.dpm.org.cn/subject_newyear/tihong.html"
+        },
+        {
+          "title": "非遗稷山螺钿",
+          "url": "https://www.ihchina.cn/project_details/14551.html"
+        },
+        {
+          "title": "Getty硬化",
+          "url": "https://www.getty.edu/conservation/publications_resources/pdf_publications/pdf/urushi3.pdf"
+        }
+      ],
+      "image_prompt_zh": "黑白五阶段分镜，薄涂→入荫→检查→研磨→再次髹涂。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "HAR-001",
+      "title": "漆树与采漆",
+      "category": "采漆与生态",
+      "summary": "采漆是在漆树树干上开割口，收集韧皮部伤口处分泌漆液的传统劳动，强烈依赖树况、季节和经验。",
+      "core_facts": [
+        "采漆劳动密集，需逐树巡视和多次收集。",
+        "树体成长与恢复需要时间。"
+      ],
+      "cause_effect_relations": [
+        "采割过强→树体负担与恢复压力增加；合理间隔与树况判断→兼顾产漆与树体持续生长。"
+      ],
+      "key_actions": [
+        "判断树况",
+        "开口",
+        "收集",
+        "安排间隔"
+      ],
+      "common_misconceptions": [
+        "割得越深越多就越好且没有代价。"
+      ],
+      "game_affordances": [
+        "可持续资源管理",
+        "树体健康值",
+        "采割强度"
+      ],
+      "learning_objectives": [
+        "理解采漆是一种与植物生命周期协调的行为。"
+      ],
+      "references": [
+        {
+          "title": "国家林草局漆树",
+          "url": "https://www.forestry.gov.cn/c/www/smcqzt/20556.jhtml"
+        },
+        {
+          "title": "林业科学季节漆酚",
+          "url": "https://html.rhhz.net/linyekexue/html/090112.htm"
+        }
+      ],
+      "image_prompt_zh": "黑白漆树树干示意，规范割口、收集容器、树体健康状态。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "HAR-002",
+      "title": "为什么采漆有季节性",
+      "category": "采漆与生态",
+      "summary": "生漆产量和品质存在明显季节变化。中国部分产区主要在夏季至初秋采割，伏天常被传统经验视为重要时期。",
+      "core_facts": [
+        "林业研究记录部分产区现行采割集中在6—9月。",
+        "不同地区、树种和气候不能机械套用同一日期。"
+      ],
+      "cause_effect_relations": [
+        "季节变化→树体生理、温度与漆液成分变化→影响产量和材料特征。"
+      ],
+      "key_actions": [
+        "看季节",
+        "看天气",
+        "看树况"
+      ],
+      "common_misconceptions": [
+        "全国任何地方都必须同一天开始采漆。"
+      ],
+      "game_affordances": [
+        "季节系统",
+        "天气决策",
+        "品质权衡"
+      ],
+      "learning_objectives": [
+        "理解采漆时间是多因素判断。"
+      ],
+      "references": [
+        {
+          "title": "林业科学季节漆酚",
+          "url": "https://html.rhhz.net/linyekexue/html/090112.htm"
+        },
+        {
+          "title": "国家林草局漆树",
+          "url": "https://www.forestry.gov.cn/c/www/smcqzt/20556.jhtml"
+        }
+      ],
+      "image_prompt_zh": "黑白四季时间轴，夏季采割窗口突出。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "PRE-001",
+      "title": "从生漆到可用漆料：过滤与精制",
+      "category": "制漆与准备",
+      "summary": "刚采下的生漆并不等于所有工序都能直接使用的精制漆料，通常需要过滤、搅拌、调节水分等处理。",
+      "core_facts": [
+        "不同地区、用途和工坊的精制方法有差异。",
+        "处理会改变漆料均匀性、黏度与后续成膜表现。"
+      ],
+      "cause_effect_relations": [
+        "去杂+调水+搅拌→改善施工状态与均匀性。"
+      ],
+      "key_actions": [
+        "过滤",
+        "搅拌",
+        "观察黏度"
+      ],
+      "common_misconceptions": [
+        "采下来直接刷就适合所有精细工序。"
+      ],
+      "game_affordances": [
+        "加工链",
+        "黏度管理",
+        "质量控制"
+      ],
+      "learning_objectives": [
+        "区分原始树液与工艺漆料。"
+      ],
+      "references": [
+        {
+          "title": "Polymers固化综述",
+          "url": "https://www.mdpi.com/2073-4360/17/12/1596"
+        }
+      ],
+      "image_prompt_zh": "黑白工作台，过滤布、漆盆、搅拌棒、黏度滴落示意。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "SUB-001",
+      "title": "漆器是复合结构：胎体+基层+漆膜",
+      "category": "胎体与基层",
+      "summary": "漆器并不是一块‘纯漆’。常见结构包括胎体、增强层/灰地等基层和多层漆膜。",
+      "core_facts": [
+        "木胎常见，但也可见竹、布/夹纻、纸、皮、金属等胎体。",
+        "基材的胀缩可传递应力到漆层。"
+      ],
+      "cause_effect_relations": [
+        "胎体结构变化→基层受力→表面漆层可能开裂、起翘。"
+      ],
+      "key_actions": [
+        "选胎",
+        "加固",
+        "找平",
+        "髹漆"
+      ],
+      "common_misconceptions": [
+        "表面漆硬，所以里面木胎怎么变都无所谓。"
+      ],
+      "game_affordances": [
+        "结构搭建",
+        "材料组合",
+        "耐久管理"
+      ],
+      "learning_objectives": [
+        "理解漆器是复合材料系统。"
+      ],
+      "references": [
+        {
+          "title": "故宫漆器",
+          "url": "https://www.dpm.org.cn/collection/lacquerwares.html"
+        },
+        {
+          "title": "Getty保护",
+          "url": "https://www.getty.edu/conservation/publications_resources/pdf_publications/pdf/urushi2.pdf"
+        }
+      ],
+      "image_prompt_zh": "黑白爆炸图，木胎、麻布、灰层、多层漆膜分层展开。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "SUB-002",
+      "title": "裱布：看不见的结构增强",
+      "category": "胎体与基层",
+      "summary": "部分传统漆器在胎体或接缝上裱麻布等纤维材料，用于加强基层和缓冲木胎接缝、胀缩带来的应力。",
+      "core_facts": [
+        "传统底层研究记录麻、丝、棉等布材使用。",
+        "不是所有漆器都采用同样裱布方式。"
+      ],
+      "cause_effect_relations": [
+        "木胎接缝应力→布层分散应力→降低缺陷传递风险。"
+      ],
+      "key_actions": [
+        "裁布",
+        "贴合",
+        "压实",
+        "阴干"
+      ],
+      "common_misconceptions": [
+        "裱布只是装饰纹理。"
+      ],
+      "game_affordances": [
+        "结构加固",
+        "覆盖率",
+        "气泡控制"
+      ],
+      "learning_objectives": [
+        "理解隐蔽工序的结构意义。"
+      ],
+      "references": [
+        {
+          "title": "Getty硬化",
+          "url": "https://www.getty.edu/conservation/publications_resources/pdf_publications/pdf/urushi3.pdf"
+        }
+      ],
+      "image_prompt_zh": "黑白剖面，木胎接缝上覆盖麻布增强层。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "SUB-003",
+      "title": "灰地与找平",
+      "category": "胎体与基层",
+      "summary": "精细漆器往往需要通过灰地/基层逐层填补、找平、研磨，最终得到适合髹漆与装饰的稳定基面。",
+      "core_facts": [
+        "不同地区灰料配方、粒度与层数有差异。",
+        "基层缺陷会在后续被放大。"
+      ],
+      "cause_effect_relations": [
+        "凹凸和接缝→上灰填平→干燥研磨→形成平整基面。"
+      ],
+      "key_actions": [
+        "上灰",
+        "刮平",
+        "阴干",
+        "打磨"
+      ],
+      "common_misconceptions": [
+        "最后看不到基层，所以基层质量不重要。"
+      ],
+      "game_affordances": [
+        "隐藏质量",
+        "平整度",
+        "缺陷传播"
+      ],
+      "learning_objectives": [
+        "理解最终光洁表面来自大量看不见的准备。"
+      ],
+      "references": [
+        {
+          "title": "非遗福州脱胎",
+          "url": "https://www.ihchina.cn/project_details/14362/"
+        },
+        {
+          "title": "非遗平遥报道",
+          "url": "https://www.ihchina.cn/project_details/24821.html"
+        }
+      ],
+      "image_prompt_zh": "黑白截面，粗灰→细灰→漆层逐步平整。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "PROC-001",
+      "title": "髹漆：不是普通刷漆",
+      "category": "基础工艺",
+      "summary": "髹漆要求控制漆量、动作、方向、膜厚、灰尘和流挂，并与荫干时机配合。",
+      "core_facts": [
+        "传统漆器往往经历多次髹涂。",
+        "‘髹’即以漆涂物。"
+      ],
+      "cause_effect_relations": [
+        "漆量和速度失控→流挂/不匀/积漆；控制工具与动作→均匀漆膜。"
+      ],
+      "key_actions": [
+        "取漆",
+        "髹涂",
+        "检查",
+        "入荫"
+      ],
+      "common_misconceptions": [
+        "刷得越快越厚越专业。"
+      ],
+      "game_affordances": [
+        "速度-厚度映射",
+        "流挂检测",
+        "精度控制"
+      ],
+      "learning_objectives": [
+        "理解髹漆本身就是技术动作。"
+      ],
+      "references": [
+        {
+          "title": "非遗漆艺展",
+          "url": "https://www.ihchina.cn/project_details/18310.html"
+        },
+        {
+          "title": "非遗稷山螺钿",
+          "url": "https://www.ihchina.cn/project_details/14551.html"
+        }
+      ],
+      "image_prompt_zh": "黑白近景，均匀薄涂与流挂厚涂对比。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "PROC-002",
+      "title": "水磨与研磨：不仅为了光滑",
+      "category": "基础工艺",
+      "summary": "研磨既用于找平，也能显露嵌材或不同色层，是很多漆艺视觉效果形成的重要步骤。",
+      "core_facts": [
+        "稷山螺钿包含反复髹漆、水中打磨、扣刻、推光。",
+        "福州漆艺发展出磨显等表现方式。"
+      ],
+      "cause_effect_relations": [
+        "磨去高点→平整；继续磨显→隐藏嵌片/色层逐渐出现；过磨→破坏目标层。"
+      ],
+      "key_actions": [
+        "选择磨料",
+        "加水",
+        "均匀研磨",
+        "判断停止"
+      ],
+      "common_misconceptions": [
+        "打磨只是最后一次抛光。"
+      ],
+      "game_affordances": [
+        "显影",
+        "过磨风险",
+        "停止时机"
+      ],
+      "learning_objectives": [
+        "理解‘磨’兼具工程与视觉作用。"
+      ],
+      "references": [
+        {
+          "title": "非遗稷山螺钿",
+          "url": "https://www.ihchina.cn/project_details/14551.html"
+        },
+        {
+          "title": "非遗福州脱胎",
+          "url": "https://www.ihchina.cn/project_details/14362/"
+        }
+      ],
+      "image_prompt_zh": "黑白水磨分镜，隐藏螺钿逐步显露。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "PROC-003",
+      "title": "推光：把表面推到温润发亮",
+      "category": "基础工艺",
+      "summary": "推光是通过细磨和反复推擦获得温润光泽的表面处理，平遥推光漆器以此形成鲜明地域特色。",
+      "core_facts": [
+        "平遥推光以手工推光著称。",
+        "制作还包括木胎、灰胎、漆工、画工、镶嵌等。"
+      ],
+      "cause_effect_relations": [
+        "表面微观粗糙度逐步下降→反射更均匀→光泽上升。"
+      ],
+      "key_actions": [
+        "细磨",
+        "推擦",
+        "看反光",
+        "控制压力"
+      ],
+      "common_misconceptions": [
+        "推光=喷一层亮光剂。"
+      ],
+      "game_affordances": [
+        "光泽进度",
+        "压力控制",
+        "耐心积累"
+      ],
+      "learning_objectives": [
+        "理解光泽是手工与材料共同形成。"
+      ],
+      "references": [
+        {
+          "title": "非遗平遥推光",
+          "url": "https://www.ihchina.cn/project_details/14359.html"
+        },
+        {
+          "title": "非遗平遥报道",
+          "url": "https://www.ihchina.cn/project_details/24821.html"
+        }
+      ],
+      "image_prompt_zh": "黑白对比，一半哑光、一半推光后出现清晰高光。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "TEC-001",
+      "title": "彩绘 / 描漆",
+      "category": "装饰技法",
+      "summary": "在漆面上以色漆绘制纹样是历史悠久的装饰方式，战国汉代彩绘漆器尤其繁盛。",
+      "core_facts": [
+        "战国汉常见动物纹、云纹、几何纹等。",
+        "彩绘涉及色漆、线条和层间工序。"
+      ],
+      "cause_effect_relations": [
+        "图案设计+漆面状态+色漆控制→最终视觉效果。"
+      ],
+      "key_actions": [
+        "起稿",
+        "描绘",
+        "分色"
+      ],
+      "common_misconceptions": [
+        "就是在成品上用普通颜料随便画。"
+      ],
+      "game_affordances": [
+        "路径绘制",
+        "分色",
+        "纹样识别"
+      ],
+      "learning_objectives": [
+        "理解彩绘的工艺性与历史性。"
+      ],
+      "references": [
+        {
+          "title": "故宫漆器",
+          "url": "https://www.dpm.org.cn/collection/lacquerwares.html"
+        }
+      ],
+      "image_prompt_zh": "黑白战国漆器纹样工作台，云纹和动物纹草图。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "TEC-002",
+      "title": "描金",
+      "category": "装饰技法",
+      "summary": "描金以金色材料在漆面形成线条或纹样，常与深色漆地形成强烈对比。",
+      "core_facts": [
+        "福州脱胎和平遥推光等体系均见描金相关装饰。"
+      ],
+      "cause_effect_relations": [
+        "深色漆地+金属反射→形成华丽高对比效果。"
+      ],
+      "key_actions": [
+        "起稿",
+        "描线",
+        "控线宽"
+      ],
+      "common_misconceptions": [
+        "描金和戗金完全一样。"
+      ],
+      "game_affordances": [
+        "描线精度",
+        "材料消耗"
+      ],
+      "learning_objectives": [
+        "区分不同金饰工艺。"
+      ],
+      "references": [
+        {
+          "title": "非遗福州脱胎",
+          "url": "https://www.ihchina.cn/project_details/14362/"
+        },
+        {
+          "title": "非遗平遥报道",
+          "url": "https://www.ihchina.cn/project_details/24821.html"
+        }
+      ],
+      "image_prompt_zh": "黑白深色漆盒，以白色高光模拟金线纹样。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "TEC-003",
+      "title": "戗金",
+      "category": "装饰技法",
+      "summary": "戗金通常先在漆面刻出细线或沟槽，再使金色材料进入刻痕，最后清理表面，让金线从凹槽中显现。",
+      "core_facts": [
+        "清代宫廷漆器中戗金彩漆与填漆是重要工艺类别。"
+      ],
+      "cause_effect_relations": [
+        "刻沟→填入金料→清理→金纹保留在凹处。"
+      ],
+      "key_actions": [
+        "刻线",
+        "填金",
+        "清理"
+      ],
+      "common_misconceptions": [
+        "直接画金线就是戗金。"
+      ],
+      "game_affordances": [
+        "刻槽",
+        "填充",
+        "多步显影"
+      ],
+      "learning_objectives": [
+        "能区分描金与戗金。"
+      ],
+      "references": [
+        {
+          "title": "故宫漆器",
+          "url": "https://www.dpm.org.cn/collection/lacquerwares.html"
+        }
+      ],
+      "image_prompt_zh": "黑白截面三步图，刻沟→填金→擦净。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "TEC-004",
+      "title": "填漆",
+      "category": "装饰技法",
+      "summary": "填漆利用刻凹或预设区域填入不同色漆，再通过研磨形成平整图案，逻辑是‘凹入—填充—磨平’。",
+      "core_facts": [
+        "明清宫廷漆器中填漆是重要门类。"
+      ],
+      "cause_effect_relations": [
+        "区域深度+填漆颜色+研磨程度→图案清晰与表面平整。"
+      ],
+      "key_actions": [
+        "刻/划",
+        "填漆",
+        "阴干",
+        "磨平"
+      ],
+      "common_misconceptions": [
+        "只是把颜色厚厚涂在表面。"
+      ],
+      "game_affordances": [
+        "空间填充",
+        "研磨显图"
+      ],
+      "learning_objectives": [
+        "理解填漆与表面绘画的结构差异。"
+      ],
+      "references": [
+        {
+          "title": "故宫漆器",
+          "url": "https://www.dpm.org.cn/collection/lacquerwares.html"
+        }
+      ],
+      "image_prompt_zh": "黑白截面，凹槽→填色→磨平显纹。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "TEC-005",
+      "title": "雕漆",
+      "category": "装饰技法",
+      "summary": "雕漆先以多层天然漆积累可雕刻厚度，再在漆层上雕出纹样，把‘涂层’转化为雕刻材料。",
+      "core_facts": [
+        "故宫资料指出雕漆可需数十至上百层髹漆。",
+        "厚度和适雕状态都是关键。"
+      ],
+      "cause_effect_relations": [
+        "层数不足→无法形成足够雕刻深度；状态过干/过软→刀法质量受影响。"
+      ],
+      "key_actions": [
+        "反复髹漆",
+        "等待",
+        "描稿",
+        "雕刻"
+      ],
+      "common_misconceptions": [
+        "在木头上雕完再刷漆就是雕漆。"
+      ],
+      "game_affordances": [
+        "层数累积",
+        "刀法深度",
+        "不可逆失误"
+      ],
+      "learning_objectives": [
+        "理解雕漆为何耗时。"
+      ],
+      "references": [
+        {
+          "title": "故宫剔红",
+          "url": "https://www.dpm.org.cn/subject_newyear/tihong.html"
+        }
+      ],
+      "image_prompt_zh": "黑白漆层截面，被雕刀切出深浅纹样。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "TEC-006",
+      "title": "剔红",
+      "category": "装饰技法",
+      "summary": "剔红是以红色厚漆层为雕刻主体的雕漆类型，题材可包括人物、花鸟、山水与吉祥纹饰。",
+      "core_facts": [
+        "剔红技法在宋元成熟，明清继续发展。",
+        "用途涉及陈设、日用、文房、家具等。"
+      ],
+      "cause_effect_relations": [
+        "多层红漆→形成厚度→描稿→雕刻→形成层次。"
+      ],
+      "key_actions": [
+        "积层",
+        "起稿",
+        "雕刻",
+        "修整"
+      ],
+      "common_misconceptions": [
+        "所有红色漆器都是剔红。"
+      ],
+      "game_affordances": [
+        "历史工艺识别",
+        "层数管理"
+      ],
+      "learning_objectives": [
+        "掌握剔红的核心材料逻辑。"
+      ],
+      "references": [
+        {
+          "title": "故宫剔红",
+          "url": "https://www.dpm.org.cn/subject_newyear/tihong.html"
+        }
+      ],
+      "image_prompt_zh": "黑白博物馆风剔红圆盒，高浮雕花纹。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "TEC-007",
+      "title": "剔犀 / 云雕",
+      "category": "装饰技法",
+      "summary": "剔犀以不同颜色漆层交替髹涂，再雕出回旋沟槽，使切面显出多层色带。图案核心来自‘层色截面’。",
+      "core_facts": [
+        "绛州剔犀列入国家传统工艺振兴目录。",
+        "具体地方技法细节需继续由传承资料核验。"
+      ],
+      "cause_effect_relations": [
+        "交替色层→雕切不同深度→截面显露不同层。"
+      ],
+      "key_actions": [
+        "交替髹色",
+        "积层",
+        "雕沟",
+        "控深"
+      ],
+      "common_misconceptions": [
+        "剔犀与犀皮漆是一回事。"
+      ],
+      "game_affordances": [
+        "隐藏层",
+        "深度控制",
+        "雕刻路径"
+      ],
+      "learning_objectives": [
+        "理解剔犀图案不是画出来的。"
+      ],
+      "references": [
+        {
+          "title": "非遗振兴目录",
+          "url": "https://www.ihchina.cn/rejuvenation.html"
+        }
+      ],
+      "image_prompt_zh": "黑白V形切口剖面，多层漆膜在截面形成层带。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "TEC-008",
+      "title": "犀皮漆",
+      "category": "装饰技法",
+      "summary": "犀皮漆通过制造底层起伏、反复罩不同色漆再研磨，让不同高度显出不同色层，形成天然斑纹般效果。",
+      "core_facts": [
+        "现代传承案例显示犀皮漆可包含大量层次并进行材料创新。",
+        "地方起纹和磨显方式可能不同。"
+      ],
+      "cause_effect_relations": [
+        "底层高低差+多层罩色+研磨→不同区域显露不同层→形成斑纹。"
+      ],
+      "key_actions": [
+        "起纹",
+        "罩漆",
+        "反复髹涂",
+        "磨显"
+      ],
+      "common_misconceptions": [
+        "使用犀牛皮制作。",
+        "和剔犀完全相同。"
+      ],
+      "game_affordances": [
+        "程序纹理",
+        "随机与控制",
+        "磨显"
+      ],
+      "learning_objectives": [
+        "理解名称不等于动物材料。"
+      ],
+      "references": [
+        {
+          "title": "非遗金漆镶嵌",
+          "url": "https://www.ihchina.cn/project_details/14543/"
+        }
+      ],
+      "image_prompt_zh": "黑白天然石纹般漆面，旁边显示起伏底层与多层罩漆。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "TEC-009",
+      "title": "螺钿",
+      "category": "装饰技法",
+      "summary": "螺钿使用贝壳、蚌壳等珠光材料切片、拼纹并嵌入漆地，之后通过罩漆和研磨使嵌片与漆面整合。",
+      "core_facts": [
+        "稷山螺钿使用软硬螺钿、天然大漆、金银、木纸等。",
+        "工序包括设计、画刻、上漆、镶嵌、反复髹漆、水磨、扣刻、推光等。"
+      ],
+      "cause_effect_relations": [
+        "嵌片厚度和位置+漆层填平+水磨→决定是否平整显露。"
+      ],
+      "key_actions": [
+        "选贝",
+        "切片",
+        "拼纹",
+        "镶嵌",
+        "罩漆",
+        "水磨"
+      ],
+      "common_misconceptions": [
+        "把整块贝壳直接粘表面就完成。"
+      ],
+      "game_affordances": [
+        "拼图",
+        "精密镶嵌",
+        "磨显"
+      ],
+      "learning_objectives": [
+        "理解螺钿的完整工艺链。"
+      ],
+      "references": [
+        {
+          "title": "非遗稷山螺钿",
+          "url": "https://www.ihchina.cn/project_details/14551.html"
+        },
+        {
+          "title": "非遗扬州",
+          "url": "https://www.ihchina.cn/project_details/14360/"
+        }
+      ],
+      "image_prompt_zh": "黑白贝片切成花瓣后嵌入深色漆面的工艺分解图。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "TEC-010",
+      "title": "点螺",
+      "category": "装饰技法",
+      "summary": "点螺是扬州漆器的重要精细螺钿门类，强调极薄、细小螺钿片的精细拼贴与色泽表现。",
+      "core_facts": [
+        "扬州现代工艺门类中明确包括点螺和平磨螺钿。"
+      ],
+      "cause_effect_relations": [
+        "螺片更薄更小→可表现更细图像→加工与定位难度更高。"
+      ],
+      "key_actions": [
+        "选片",
+        "切割",
+        "定位",
+        "拼贴",
+        "磨平"
+      ],
+      "common_misconceptions": [
+        "点螺只是螺钿的随意别称。"
+      ],
+      "game_affordances": [
+        "微型拼片",
+        "像素化构图",
+        "精细操作"
+      ],
+      "learning_objectives": [
+        "认识扬州精细镶嵌特色。"
+      ],
+      "references": [
+        {
+          "title": "非遗扬州",
+          "url": "https://www.ihchina.cn/project_details/14360/"
+        },
+        {
+          "title": "非遗扬州调研",
+          "url": "https://www.ihchina.cn/project_details/19020.html"
+        }
+      ],
+      "image_prompt_zh": "黑白微型贝片像马赛克组成山水图案。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "TEC-011",
+      "title": "脱胎 / 夹纻的结构逻辑",
+      "category": "装饰技法",
+      "summary": "脱胎类漆器以布、麻等纤维与漆灰在模具或胎型上逐层成形，达到强度后移除内部胎模，形成轻质空心壳体。",
+      "core_facts": [
+        "福州脱胎漆器是国家级非遗。",
+        "后续还需上灰、打磨、髹饰、推光与多种装饰。"
+      ],
+      "cause_effect_relations": [
+        "纤维+漆灰逐层硬化→形成自承壳体；脱去内模→减轻重量。"
+      ],
+      "key_actions": [
+        "制模",
+        "裱布",
+        "上灰",
+        "干燥",
+        "脱胎",
+        "修整"
+      ],
+      "common_misconceptions": [
+        "脱胎就是把木头挖空。"
+      ],
+      "game_affordances": [
+        "模具",
+        "壳体建造",
+        "重量管理"
+      ],
+      "learning_objectives": [
+        "理解‘脱胎’是一种成型逻辑。"
+      ],
+      "references": [
+        {
+          "title": "非遗福州脱胎",
+          "url": "https://www.ihchina.cn/project_details/14362/"
+        }
+      ],
+      "image_prompt_zh": "黑白爆炸图，模具→布漆层→脱去内模→空心器物。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "TEC-012",
+      "title": "金漆镶嵌：多工艺组合体系",
+      "category": "装饰技法",
+      "summary": "北京金漆镶嵌并非单一动作，而是综合镶嵌、彩绘、雕填、刻灰、断纹、虎皮漆等多种手法的工艺体系。",
+      "core_facts": [
+        "产品包括器皿、家具、屏风、牌匾、壁饰等。"
+      ],
+      "cause_effect_relations": [
+        "多材料+多工序→丰富层次与强装饰效果。"
+      ],
+      "key_actions": [
+        "设计",
+        "选材",
+        "镶嵌",
+        "雕填",
+        "整合"
+      ],
+      "common_misconceptions": [
+        "只是贴金箔。"
+      ],
+      "game_affordances": [
+        "多工艺组合",
+        "流程协作"
+      ],
+      "learning_objectives": [
+        "理解地域漆艺可以是复杂技术生态。"
+      ],
+      "references": [
+        {
+          "title": "非遗金漆镶嵌",
+          "url": "https://www.ihchina.cn/project_details/14543/"
+        }
+      ],
+      "image_prompt_zh": "黑白宫廷漆屏风，多种材质镶嵌与漆层组合。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "TEC-013",
+      "title": "磨显 / 变涂",
+      "category": "装饰技法",
+      "summary": "变涂与磨显通过先制造肌理、叠加不同漆层，再研磨显露下层，形成不可完全复制但可控制的纹理。",
+      "core_facts": [
+        "福州漆艺传承中有罩明、变涂、磨显等发展。"
+      ],
+      "cause_effect_relations": [
+        "起伏差异+罩层+研磨→不同高度暴露不同色层。"
+      ],
+      "key_actions": [
+        "制肌理",
+        "罩漆",
+        "研磨",
+        "判断停止"
+      ],
+      "common_misconceptions": [
+        "纯随机、不需要判断。"
+      ],
+      "game_affordances": [
+        "隐藏层",
+        "显影",
+        "过磨风险"
+      ],
+      "learning_objectives": [
+        "理解研磨也可以生成图像。"
+      ],
+      "references": [
+        {
+          "title": "非遗福州脱胎",
+          "url": "https://www.ihchina.cn/project_details/14362/"
+        }
+      ],
+      "image_prompt_zh": "黑白抽象漆面由磨显逐步出现隐藏纹理。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "REG-001",
+      "title": "平遥推光漆器",
+      "category": "地域传统",
+      "summary": "平遥推光漆器以天然大漆和手工推光见长，制作涉及木胎、灰胎、漆工、画工、镶嵌等多个环节。",
+      "core_facts": [
+        "2006年列入首批国家级非遗代表性项目。",
+        "既有家具，也有屏风、漆画等。"
+      ],
+      "cause_effect_relations": [
+        "基层质量+多道髹漆+反复推光→华亮深润表面。"
+      ],
+      "key_actions": [
+        "木胎",
+        "灰胎",
+        "髹漆",
+        "描金",
+        "推光"
+      ],
+      "common_misconceptions": [
+        "只是最后抛光一下。"
+      ],
+      "game_affordances": [
+        "工序协作",
+        "光泽累积"
+      ],
+      "learning_objectives": [
+        "识别平遥推光特色。"
+      ],
+      "references": [
+        {
+          "title": "非遗平遥推光",
+          "url": "https://www.ihchina.cn/project_details/14359.html"
+        },
+        {
+          "title": "非遗平遥报道",
+          "url": "https://www.ihchina.cn/project_details/24821.html"
+        }
+      ],
+      "image_prompt_zh": "黑白平遥漆柜、屏风与推光手势特写。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "REG-002",
+      "title": "扬州漆器：多门类雕嵌传统",
+      "category": "地域传统",
+      "summary": "扬州漆器历史悠久，现代工艺包括点螺、雕漆、雕漆嵌玉、刻漆、平磨螺钿、彩绘、骨石镶嵌、漆砂砚、磨漆画等。",
+      "core_facts": [
+        "战国已有较高水平；汉代彩绘丰富；唐代脱胎干漆、金银平脱、螺钿成熟；明清达到鼎盛。"
+      ],
+      "cause_effect_relations": [
+        "地方长期生产体系→多门类并存→形成精细雕嵌特色。"
+      ],
+      "key_actions": [
+        "识别门类",
+        "根据设计匹配工艺"
+      ],
+      "common_misconceptions": [
+        "扬州漆器只有一种固定技法。"
+      ],
+      "game_affordances": [
+        "工艺树",
+        "车间协作",
+        "历史解锁"
+      ],
+      "learning_objectives": [
+        "理解地域传统是工艺生态。"
+      ],
+      "references": [
+        {
+          "title": "非遗扬州",
+          "url": "https://www.ihchina.cn/project_details/14360/"
+        },
+        {
+          "title": "非遗扬州调研",
+          "url": "https://www.ihchina.cn/project_details/19020.html"
+        }
+      ],
+      "image_prompt_zh": "黑白九类工艺环形信息图围绕扬州漆盒。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "REG-003",
+      "title": "福州脱胎漆器",
+      "category": "地域传统",
+      "summary": "福州脱胎漆器以轻质脱胎结构和丰富表面髹饰结合见长。",
+      "core_facts": [
+        "可涉及布坯/木坯、上灰、打磨、髹饰、黑推光、色推光、晕金、描金、螺钿等。"
+      ],
+      "cause_effect_relations": [
+        "脱胎解决结构与重量；髹饰解决视觉表达。"
+      ],
+      "key_actions": [
+        "制胎",
+        "上灰",
+        "脱胎",
+        "髹饰",
+        "推光"
+      ],
+      "common_misconceptions": [
+        "脱胎只是纹样名称。"
+      ],
+      "game_affordances": [
+        "轻量化",
+        "模具",
+        "装饰路线"
+      ],
+      "learning_objectives": [
+        "理解结构与表面两条工艺链。"
+      ],
+      "references": [
+        {
+          "title": "非遗福州脱胎",
+          "url": "https://www.ihchina.cn/project_details/14362/"
+        }
+      ],
+      "image_prompt_zh": "黑白福州脱胎花瓶从模具到空心器物再到髹饰。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "REG-004",
+      "title": "成都漆艺",
+      "category": "地域传统",
+      "summary": "成都漆艺以天然生漆和多样地域技法著称，战国秦汉时期已高度发展。",
+      "core_facts": [
+        "地方特色包括雕嵌填彩、雕填影花、雕锡丝光、拉刀针刻、隐花变涂等。"
+      ],
+      "cause_effect_relations": [
+        "长期地方材料与审美实践→形成独特技法组合。"
+      ],
+      "key_actions": [
+        "雕",
+        "嵌",
+        "填彩",
+        "针刻",
+        "变涂"
+      ],
+      "common_misconceptions": [
+        "成都漆艺就是普通黑红漆器。"
+      ],
+      "game_affordances": [
+        "技法组合",
+        "地域识别"
+      ],
+      "learning_objectives": [
+        "认识成都漆艺多样性。"
+      ],
+      "references": [
+        {
+          "title": "非遗成都",
+          "url": "https://www.ihchina.cn/project_details/14364.html"
+        }
+      ],
+      "image_prompt_zh": "黑白成都漆器细节拼贴，针刻、填彩、镶嵌。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "REG-005",
+      "title": "稷山螺钿漆器",
+      "category": "地域传统",
+      "summary": "稷山螺钿把天然大漆与软硬螺钿、金银、木纸等结合，工序细密而漫长。",
+      "core_facts": [
+        "主要工序包括胎型设计、制胎、灰制、打磨、画刻、上漆、镶嵌、反复髹漆、水磨、扣刻、推光。"
+      ],
+      "cause_effect_relations": [
+        "前道精度决定后道效果；失误会在长流程中累积。"
+      ],
+      "key_actions": [
+        "规划工序",
+        "镶嵌",
+        "髹漆",
+        "水磨",
+        "推光"
+      ],
+      "common_misconceptions": [
+        "螺钿就是贴贝壳一道工序。"
+      ],
+      "game_affordances": [
+        "多阶段任务",
+        "依赖链",
+        "错误累积"
+      ],
+      "learning_objectives": [
+        "理解复杂工艺为何需要长期训练。"
+      ],
+      "references": [
+        {
+          "title": "非遗稷山螺钿",
+          "url": "https://www.ihchina.cn/project_details/14551.html"
+        }
+      ],
+      "image_prompt_zh": "黑白长卷流程图，木胎到螺钿再到推光。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "REG-006",
+      "title": "中国漆艺的地域多样性",
+      "category": "地域传统",
+      "summary": "国家传统工艺振兴目录中的漆器髹饰项目分布广泛，说明中国漆艺不是一种统一风格，而是多个地域技术传统的集合。",
+      "core_facts": [
+        "目录涉及北京雕漆、成都漆艺、厦门漆线雕、平遥推光、扬州、福州脱胎、绛州剔犀、稷山螺钿、徽州、鄱阳脱胎、潍坊嵌银、楚式、阳江、重庆、彝族漆器、宁波泥金彩漆等。"
+      ],
+      "cause_effect_relations": [
+        "地域材料、历史、审美、用途差异→形成多种技法。"
+      ],
+      "key_actions": [
+        "比较地区",
+        "识别特色"
+      ],
+      "common_misconceptions": [
+        "存在一个唯一‘中国漆艺风格’。"
+      ],
+      "game_affordances": [
+        "区域技能树",
+        "文化地图"
+      ],
+      "learning_objectives": [
+        "建立多样性意识，避免单一代表。"
+      ],
+      "references": [
+        {
+          "title": "非遗振兴目录",
+          "url": "https://www.ihchina.cn/rejuvenation.html"
+        }
+      ],
+      "image_prompt_zh": "黑白中国区域网络图，以城市名和工艺名连接，不强调行政边界。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "HIS-001",
+      "title": "新石器时代：很早就有漆器",
+      "category": "历史",
+      "summary": "故宫资料提到河姆渡文化的木胎红色漆碗，说明中国至少在六七千年前已经使用天然漆制作器物。",
+      "core_facts": [
+        "早期多为生活用品。",
+        "红、黑等单色以及彩绘、镶嵌较重要。"
+      ],
+      "cause_effect_relations": [
+        "先民认识天然漆的防护与装饰特性→漆器逐步发展。"
+      ],
+      "key_actions": [
+        "识别早期器型",
+        "比较颜色与装饰"
+      ],
+      "common_misconceptions": [
+        "漆器是明清才出现。"
+      ],
+      "game_affordances": [
+        "考古时间线",
+        "文物复原"
+      ],
+      "learning_objectives": [
+        "知道漆器史远早于宫廷时代。"
+      ],
+      "references": [
+        {
+          "title": "故宫漆器",
+          "url": "https://www.dpm.org.cn/collection/lacquerwares.html"
+        }
+      ],
+      "image_prompt_zh": "黑白考古陈列，河姆渡漆碗与地层剖面。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "HIS-002",
+      "title": "战国—汉：漆器繁荣期",
+      "category": "历史",
+      "summary": "战国、汉代是中国漆器制造的重要繁荣时期，器型、彩绘、纹样与使用场景显著增加。",
+      "core_facts": [
+        "常见描彩漆、镶嵌、针刻等；动物纹、云纹、几何纹丰富。",
+        "扬州等地出土大量汉代漆器。"
+      ],
+      "cause_effect_relations": [
+        "社会生产与消费扩大→专业化工艺发展。"
+      ],
+      "key_actions": [
+        "纹样识别",
+        "时代比较"
+      ],
+      "common_misconceptions": [
+        "汉代漆器只是简单黑色器皿。"
+      ],
+      "game_affordances": [
+        "博物馆解谜",
+        "纹样分类"
+      ],
+      "learning_objectives": [
+        "理解战国汉漆器繁荣。"
+      ],
+      "references": [
+        {
+          "title": "故宫漆器",
+          "url": "https://www.dpm.org.cn/collection/lacquerwares.html"
+        },
+        {
+          "title": "非遗扬州",
+          "url": "https://www.ihchina.cn/project_details/14360/"
+        }
+      ],
+      "image_prompt_zh": "黑白战国汉耳杯、盒、盘与云气纹细节。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "HIS-003",
+      "title": "唐宋元：复杂技法持续成熟",
+      "category": "历史",
+      "summary": "唐宋元时期多种复杂漆工艺继续发展。扬州资料显示唐代脱胎干漆、金银平脱、螺钿已较成熟，剔红在宋元趋于成熟。",
+      "core_facts": [
+        "漆器进入贡品、宗教、日用、文房等多场景。"
+      ],
+      "cause_effect_relations": [
+        "专业化与交流→装饰技法细分。"
+      ],
+      "key_actions": [
+        "时代与技法匹配"
+      ],
+      "common_misconceptions": [
+        "复杂技法都是清代发明。"
+      ],
+      "game_affordances": [
+        "历史技术树"
+      ],
+      "learning_objectives": [
+        "理解工艺演进的长期性。"
+      ],
+      "references": [
+        {
+          "title": "非遗扬州",
+          "url": "https://www.ihchina.cn/project_details/14360/"
+        },
+        {
+          "title": "故宫剔红",
+          "url": "https://www.dpm.org.cn/subject_newyear/tihong.html"
+        }
+      ],
+      "image_prompt_zh": "黑白时间轴：唐螺钿、宋元剔红节点。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "HIS-004",
+      "title": "明清：宫廷与地方体系并进",
+      "category": "历史",
+      "summary": "明清时期宫廷与地方漆艺都高度发展，雕漆、描饰、戗金、填漆、镶嵌等门类丰富，扬州等地方传统也达到高峰。",
+      "core_facts": [
+        "故宫藏大量清代漆器。",
+        "明代存在宫廷漆器作坊。"
+      ],
+      "cause_effect_relations": [
+        "宫廷需求+专业作坊+地方生产→工艺和题材高度丰富。"
+      ],
+      "key_actions": [
+        "工坊分工",
+        "订单匹配"
+      ],
+      "common_misconceptions": [
+        "明清漆器只有宫廷，没有地方传统。"
+      ],
+      "game_affordances": [
+        "工坊经营",
+        "技法选择"
+      ],
+      "learning_objectives": [
+        "理解宫廷与地方共同塑造漆艺。"
+      ],
+      "references": [
+        {
+          "title": "故宫漆器",
+          "url": "https://www.dpm.org.cn/collection/lacquerwares.html"
+        },
+        {
+          "title": "非遗扬州",
+          "url": "https://www.ihchina.cn/project_details/14360/"
+        }
+      ],
+      "image_prompt_zh": "黑白明清作坊，不同工序分工场景。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "CUL-001",
+      "title": "漆器不只是艺术摆件",
+      "category": "文化与使用",
+      "summary": "漆器历史用途跨越生活器具、家具、文房、宗教礼仪、建筑装饰和陈设艺术。",
+      "core_facts": [
+        "地方非遗项目同时包含实用品与陈设品。"
+      ],
+      "cause_effect_relations": [
+        "防护性能+轻质/成型能力+装饰潜力→进入多种生活场景。"
+      ],
+      "key_actions": [
+        "根据用途选择胎体和工艺"
+      ],
+      "common_misconceptions": [
+        "漆器只适合放博物馆。"
+      ],
+      "game_affordances": [
+        "用途匹配",
+        "功能-工艺权衡"
+      ],
+      "learning_objectives": [
+        "理解漆艺与生活文化的关系。"
+      ],
+      "references": [
+        {
+          "title": "故宫漆器",
+          "url": "https://www.dpm.org.cn/collection/lacquerwares.html"
+        },
+        {
+          "title": "非遗平遥推光",
+          "url": "https://www.ihchina.cn/project_details/14359.html"
+        }
+      ],
+      "image_prompt_zh": "黑白物件墙：漆碗、盒、家具、屏风、文房器。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "CUL-002",
+      "title": "为什么漆艺高度依赖经验",
+      "category": "文化与传承",
+      "summary": "漆料状态、环境、刀感、打磨程度和推光效果等常难以完全化为固定参数，因此漆艺长期依赖实践、观察和口传心授。",
+      "core_facts": [
+        "成都非遗资料强调手工性与口传心授。",
+        "平遥传承资料强调选漆、配料与荫干判断依靠经验。"
+      ],
+      "cause_effect_relations": [
+        "天然材料波动+过程长+反馈滞后→形成默会知识。"
+      ],
+      "key_actions": [
+        "观察",
+        "触摸",
+        "判断",
+        "修正"
+      ],
+      "common_misconceptions": [
+        "所有传统技艺都能被固定参数表完全代替。"
+      ],
+      "game_affordances": [
+        "经验值",
+        "感知线索",
+        "学徒成长"
+      ],
+      "learning_objectives": [
+        "理解显性知识与默会知识的区别。"
+      ],
+      "references": [
+        {
+          "title": "非遗成都",
+          "url": "https://www.ihchina.cn/project_details/14364.html"
+        },
+        {
+          "title": "非遗平遥报道",
+          "url": "https://www.ihchina.cn/project_details/24821.html"
+        }
+      ],
+      "image_prompt_zh": "黑白手部特写，师傅示范观察漆面，新手模仿。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "CUL-003",
+      "title": "机制—知识一致性",
+      "category": "文化与真实性",
+      "summary": "文化游戏即使文字说明正确，如果奖励、惩罚、胜负条件与真实工艺逻辑冲突，仍可能造成误导。",
+      "core_facts": [
+        "例如真实知识强调薄涂、等待、树体恢复，游戏若奖励一次厚涂、无限采割或跳过判断，就会传递相反含义。"
+      ],
+      "cause_effect_relations": [
+        "玩家从行动—反馈中学习规则→奖励结构会形成隐性文化理解。"
+      ],
+      "key_actions": [
+        "检查奖励",
+        "检查惩罚",
+        "检查过关条件",
+        "检查玩家是否必须使用知识"
+      ],
+      "common_misconceptions": [
+        "只要百科文字准确，玩法怎么设计都无所谓。"
+      ],
+      "game_affordances": [
+        "机制审查",
+        "文化冲突检测"
+      ],
+      "learning_objectives": [
+        "能判断文化是否真正进入玩法。"
+      ],
+      "references": [
+        {
+          "title": "非遗漆艺展",
+          "url": "https://www.ihchina.cn/project_details/18310.html"
+        }
+      ],
+      "image_prompt_zh": "黑白对比图：错误‘无限采漆+高分’ vs 正确‘观察树况+控制采割’。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "SAFE-001",
+      "title": "未固化生漆的过敏风险",
+      "category": "安全",
+      "summary": "未固化天然生漆可因漆酚导致接触性皮炎等过敏反应，真实工坊体验必须重视防护。",
+      "core_facts": [
+        "个体敏感性不同。",
+        "天然材料并不等于无风险。"
+      ],
+      "cause_effect_relations": [
+        "皮肤接触漆酚→过敏风险；减少暴露和防护→降低接触。"
+      ],
+      "key_actions": [
+        "戴手套/防护衣",
+        "避免皮肤直接接触"
+      ],
+      "common_misconceptions": [
+        "天然所以可以徒手操作。"
+      ],
+      "game_affordances": [
+        "安全装备",
+        "风险值"
+      ],
+      "learning_objectives": [
+        "建立真实安全意识。"
+      ],
+      "references": [
+        {
+          "title": "Polymers过敏物质",
+          "url": "https://www.mdpi.com/2073-4360/17/13/1722"
+        }
+      ],
+      "image_prompt_zh": "黑白安全图标：手套、袖套、未固化漆液警示。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "CON-001",
+      "title": "光照会让漆膜老化",
+      "category": "保存与保护",
+      "summary": "天然漆膜对光尤其紫外线敏感，长期强光暴露会造成表面化学变化、失光与性能劣化。",
+      "core_facts": [
+        "Getty保护研究强调亚洲漆器应避免高光照和紫外。"
+      ],
+      "cause_effect_relations": [
+        "光能→表面氧化/降解→颜色、光泽和表面性质变化。"
+      ],
+      "key_actions": [
+        "控制展示光照",
+        "避免长期直晒"
+      ],
+      "common_misconceptions": [
+        "漆器越晒越亮。"
+      ],
+      "game_affordances": [
+        "光剂量管理",
+        "博物馆保护"
+      ],
+      "learning_objectives": [
+        "理解漆器也会老化。"
+      ],
+      "references": [
+        {
+          "title": "Getty保护",
+          "url": "https://www.getty.edu/conservation/publications_resources/pdf_publications/pdf/urushi2.pdf"
+        }
+      ],
+      "image_prompt_zh": "黑白展柜，一侧强光导致失光，一侧低照保持稳定。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    },
+    {
+      "id": "CON-002",
+      "title": "干湿变化会通过胎体破坏漆层",
+      "category": "保存与保护",
+      "summary": "木、竹等胎体会随环境湿度变化收缩或膨胀，漆层作为覆盖层会承受应力并可能开裂、起翘。",
+      "core_facts": [
+        "Getty文保资料强调稳定环境的重要性。"
+      ],
+      "cause_effect_relations": [
+        "湿度突变→胎体尺寸变化→漆层受力→裂纹/翘起。"
+      ],
+      "key_actions": [
+        "保持稳定环境",
+        "避免突然干燥/潮湿"
+      ],
+      "common_misconceptions": [
+        "表面硬就完全不受内部影响。"
+      ],
+      "game_affordances": [
+        "环境稳定",
+        "裂纹风险"
+      ],
+      "learning_objectives": [
+        "理解复合结构的力学关系。"
+      ],
+      "references": [
+        {
+          "title": "Getty保护",
+          "url": "https://www.getty.edu/conservation/publications_resources/pdf_publications/pdf/urushi2.pdf"
+        }
+      ],
+      "image_prompt_zh": "黑白截面，木胎干湿伸缩牵拉表面漆层。",
+      "verification": "公开权威/学术资料初步核验；正式论文实验前建议专家复核"
+    }
+  ],
+  "expansion_backlog": [
+    "工具体系：漆刷、漆刀、刮板、荫房、研磨材料、雕刻刀等",
+    "更多地域：楚式、徽州、重庆、阳江、彝族、宁波泥金彩漆、潍坊嵌银、鄱阳脱胎、厦门漆线雕",
+    "纹样与图像学：云气纹、动物纹、吉祥纹、山水人物等",
+    "器型与场景：耳杯、盒、盘、家具、屏风、文房、礼仪器",
+    "漆画与当代漆艺",
+    "文物修复与伦理",
+    "专家访谈中的默会知识与判断线索"
+  ]
+}

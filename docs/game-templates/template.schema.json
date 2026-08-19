@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "漆问游戏模板定义",
+  "type": "object",
+  "required": ["templateId", "displayName", "componentType", "inputMode", "winCondition", "culturalAffordance", "schemaVersion"],
+  "properties": {
+    "templateId": { "type": "string", "minLength": 3 },
+    "displayName": { "type": "string", "minLength": 2 },
+    "componentType": { "type": "string", "pattern": "^QIWEN\\.GameTemplates\\." },
+    "inputMode": { "type": "string", "minLength": 2 },
+    "winCondition": { "type": "string", "minLength": 2 },
+    "culturalAffordance": { "type": "string", "minLength": 8 },
+    "schemaVersion": { "const": 1 }
+  },
+  "additionalProperties": false
+}

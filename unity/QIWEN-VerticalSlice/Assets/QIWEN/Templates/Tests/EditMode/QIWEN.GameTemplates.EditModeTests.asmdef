@@ -1,0 +1,8 @@
+{
+  "name": "QIWEN.GameTemplates.EditModeTests",
+  "rootNamespace": "QIWEN.GameTemplates.Tests",
+  "references": ["QIWEN.GameTemplates"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1600" viewBox="0 0 1600 1600">
+  <defs>
+    <style>
+      .bg{fill:#090a0d}
+      .panel{fill:#14151a;stroke:#5e2b47;stroke-width:2}
+      .panel2{fill:#191922;stroke:#74415c;stroke-width:2}
+      .pink{fill:#ff4f9a}
+      .pink2{fill:#f17fb2}
+      .purple{fill:#9d69ff}
+      .lav{fill:#c9b4ff}
+      .txt{fill:#f5edf2;font-family:"Noto Sans SC","Microsoft YaHei",Arial,sans-serif}
+      .muted{fill:#b7a7b0;font-family:"Noto Sans SC","Microsoft YaHei",Arial,sans-serif}
+      .small{font-size:22px}
+      .body{font-size:27px}
+      .h3{font-size:31px;font-weight:600}
+      .h2{font-size:42px;font-weight:700}
+      .h1{font-size:58px;font-weight:800}
+      .dash{fill:none;stroke:#ff4f9a;stroke-width:3;stroke-dasharray:12 14;opacity:.8}
+      .line{fill:none;stroke:#8a6b7c;stroke-width:2}
+      .arrow{fill:none;stroke:#ff4f9a;stroke-width:4;marker-end:url(#arr)}
+      .node{fill:#202129;stroke:#a05378;stroke-width:2}
+      .node2{fill:#252631;stroke:#7d5ba3;stroke-width:2}
+      .chip{fill:#3a1930;stroke:#ff4f9a;stroke-width:1.5}
+      .icon{fill:none;stroke:#f3c4d9;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+      .iconp{fill:none;stroke:#cdb9ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+    <marker id="arr" markerWidth="14" markerHeight="14" refX="11" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,5 L0,10 z" fill="#ff4f9a"/>
+    </marker>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="g1">
+      <stop offset="0" stop-color="#7f234e"/>
+      <stop offset=".58" stop-color="#351425"/>
+      <stop offset="1" stop-color="#16141a"/>
+    </radialGradient>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0" stop-color="#472138"/>
+      <stop offset="1" stop-color="#1b1b26"/>
+    </linearGradient>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="1600"/>
+
+  <!-- Title -->
+  <text class="txt h1" x="78" y="95">漆问</text>
+  <text class="pink body" x="80" y="138">QI WEN</text>
+  <text class="txt h3" x="80" y="190">设计灵感与思路</text>
+  <text class="muted small" x="80" y="224">DESIGN INSPIRATION &amp; THINKING</text>
+
+  <!-- Legend -->
+  <g transform="translate(82,270)">
+    <circle r="8" cx="0" cy="0" class="pink"/><text class="muted small" x="22" y="7">起点 Origin</text>
+    <circle r="8" cx="0" cy="40" fill="#c05586"/><text class="muted small" x="22" y="47">向内 Inward</text>
+    <circle r="8" cx="0" cy="80" fill="#8c5ea7"/><text class="muted small" x="22" y="87">实践 Practice</text>
+    <circle r="8" cx="0" cy="120" fill="#6f77b5"/><text class="muted small" x="22" y="127">反思 Reflection</text>
+    <circle r="8" cx="0" cy="160" fill="#a24c8d"/><text class="muted small" x="22" y="167">外展 Outward</text>
+    <circle r="8" cx="0" cy="200" fill="#ac6ae0"/><text class="muted small" x="22" y="207">共创 Co-creation</text>
+  </g>
+
+  <!-- sweeping arrows -->
+  <path class="dash" d="M260 120 C520 20 970 30 1260 160"/>
+  <path class="arrow" d="M1260 160 C1450 280 1480 470 1455 600"/>
+  <path class="arrow" d="M132 520 C100 730 120 910 280 1020"/>
+  <path class="arrow" d="M1450 610 C1470 850 1370 1020 1220 1090"/>
+
+  <!-- 01 INWARD -->
+  <text class="pink h2" x="500" y="92">01 向内追问 / INWARD</text>
+  <text class="muted body" x="500" y="130">从个人身份出发，追问我与漆艺的连接</text>
+
+  <ellipse class="panel" cx="745" cy="300" rx="420" ry="220"/>
+  <circle cx="745" cy="300" r="95" fill="url(#g1)" stroke="#ff4f9a" stroke-width="3" filter="url(#softGlow)"/>
+  <text class="txt h1" x="745" y="300" text-anchor="middle">漆</text>
+  <text class="txt h3" x="745" y="345" text-anchor="middle">我的姓氏</text>
+  <text class="muted small" x="745" y="375" text-anchor="middle">MY SURNAME</text>
+
+  <!-- inward satellite nodes -->
+  <g>
+    <circle class="node" cx="500" cy="220" r="66"/>
+    <path class="icon" d="M470 220 h26 l10 10 10-10 h26 v42 h-72z M500 220 v42"/>
+    <text class="pink2 h3" x="410" y="148">姓氏传说</text>
+    <text class="muted small" x="395" y="178">许多姓氏源于古代职业</text>
+
+    <circle class="node" cx="985" cy="220" r="66"/>
+    <path class="icon" d="M958 200 q27-18 54 0 v48 q-27 18-54 0z M971 214 q14-9 28 0"/>
+    <text class="pink2 h3" x="1038" y="148">工艺之美</text>
+    <text class="muted small" x="1038" y="178">器物背后是材料、时间与手工</text>
+
+    <circle class="node" cx="500" cy="380" r="66"/>
+    <path class="icon" d="M475 398 q25-35 50 0 M480 360 q20-20 40 0"/>
+    <text class="pink2 h3" x="390" y="476">家族想象</text>
+    <text class="muted small" x="365" y="506">是否曾与漆艺有关？</text>
+
+    <circle class="node" cx="985" cy="380" r="66"/>
+    <path class="icon" d="M985 349 c-18 20-28 35-28 49 a28 28 0 0 0 56 0 c0-14-10-29-28-49z"/>
+    <text class="pink2 h3" x="1038" y="450">文化思考</text>
+    <text class="muted small" x="1038" y="480">当技艺不再通过双手传承？</text>
+
+    <circle class="node" cx="745" cy="470" r="60"/>
+    <path class="icon" d="M745 438 c-20 28-28 42-28 55 a28 28 0 0 0 56 0 c0-13-8-27-28-55z"/>
+    <text class="pink2 h3" x="590" y="555">身体与材料</text>
+    <text class="muted small" x="560" y="586">大漆会与人的身体产生直接关系</text>
+  </g>
+
+  <path class="arrow" d="M745 538 L745 615"/>
+  <text class="txt h3" x="775" y="570">我不会做传统漆艺</text>
+  <text class="txt h3" x="775" y="606">但我会做游戏</text>
+
+  <!-- context -->
+  <text class="pink h3" x="1235" y="150">外部背景 / CONTEXT</text>
+  <circle class="panel" cx="1330" cy="320" r="170"/>
+  <text class="txt h3" x="1330" y="245" text-anchor="middle">社会因素</text>
+  <circle cx="1275" cy="305" r="32" fill="#7c294f"/><text class="txt small" x="1275" y="314" text-anchor="middle">70%</text>
+  <circle cx="1330" cy="350" r="32" fill="#5d2b4d"/><text class="txt small" x="1330" y="359" text-anchor="middle">40%</text>
+  <circle cx="1385" cy="395" r="32" fill="#41293e"/><text class="txt small" x="1385" y="404" text-anchor="middle">35%</text>
+  <text class="muted small" x="1328" y="456" text-anchor="middle">城市化 · 人口迁移 · 学习门槛</text>
+  <text class="muted small" x="1328" y="486" text-anchor="middle">传统工艺接触机会减少</text>
+
+  <!-- individual factors -->
+  <text class="pink h3" x="80" y="640">个体因素 / INDIVIDUAL</text>
+  <circle class="panel" cx="240" cy="790" r="180"/>
+  <text class="txt h3" x="240" y="712" text-anchor="middle">用户特点</text>
+  <text class="muted small" x="145" y="752">• 对传统文化兴趣提升</text>
+  <text class="muted small" x="145" y="790">• 偏好互动与体验式学习</text>
+  <text class="muted small" x="145" y="828">• 学习时间碎片化</text>
+  <text class="pink2 h3" x="145" y="884">障碍者</text>
+  <text class="muted small" x="145" y="920">• 缺乏专业知识</text>
+  <text class="muted small" x="145" y="956">• 没有制作工具与材料</text>
+
+  <!-- 02 practice -->
+  <text class="pink h2" x="560" y="640">02 游戏实践 / PRACTICE</text>
+  <text class="muted body" x="560" y="678">把漆艺转译为可玩的数字世界</text>
+
+  <circle cx="760" cy="820" r="170" fill="url(#g1)" stroke="#a14a72" stroke-width="3"/>
+  <text class="txt h2" x="760" y="800" text-anchor="middle">漆问 1.0</text>
+  <text class="txt body" x="760" y="842" text-anchor="middle">文化教育游戏</text>
+  <path d="M655 890 q105-95 210 0" fill="#61223f"/>
+  <rect x="700" y="852" width="120" height="55" fill="#2d1924"/>
+  <path d="M700 852 L760 810 L820 852" fill="#5f2540"/>
+
+  <g>
+    <circle class="node" cx="535" cy="760" r="58"/><text class="txt body" x="535" y="770" text-anchor="middle">探索</text>
+    <circle class="node" cx="535" cy="900" r="58"/><text class="txt body" x="535" y="910" text-anchor="middle">收集</text>
+    <circle class="node" cx="985" cy="760" r="58"/><text class="txt body" x="985" y="770" text-anchor="middle">体验</text>
+    <circle class="node" cx="985" cy="900" r="58"/><text class="txt body" x="985" y="910" text-anchor="middle">学习</text>
+    <circle class="node" cx="760" cy="1010" r="58"/><text class="txt body" x="760" y="1020" text-anchor="middle">解谜</text>
+  </g>
+  <path class="line" d="M590 760 C630 720 660 705 690 700"/>
+  <path class="line" d="M590 900 C630 930 660 945 690 952"/>
+  <path class="line" d="M930 760 C890 720 860 705 830 700"/>
+  <path class="line" d="M930 900 C890 930 860 945 830 952"/>
+  <path class="line" d="M760 952 L760 952"/>
+
+  <!-- player/body factors -->
+  <text class="pink h3" x="1160" y="665">玩家与体验因素 / PLAYER</text>
+  <ellipse class="panel2" cx="1295" cy="840" rx="235" ry="205"/>
+  <circle class="node2" cx="1218" cy="777" r="80"/>
+  <text class="txt body" x="1218" y="758" text-anchor="middle">心理变化</text>
+  <text class="muted small" x="1218" y="798" text-anchor="middle">兴趣 · 成就感</text>
+  <circle class="node2" cx="1255" cy="925" r="80"/>
+  <text class="txt body" x="1255" y="906" text-anchor="middle">生理变化</text>
+  <text class="muted small" x="1255" y="946" text-anchor="middle">注意 · 情绪投入</text>
+  <circle class="node2" cx="1388" cy="848" r="95"/>
+  <text class="txt body" x="1388" y="820" text-anchor="middle">思维与理解</text>
+  <text class="muted small" x="1388" y="860" text-anchor="middle">自我实现感</text>
+  <text class="muted small" x="1388" y="893" text-anchor="middle">联想 · 记忆</text>
+
+  <!-- 03 reflection -->
+  <text class="purple h2" x="520" y="1095">03 反思 / REFLECTION</text>
+  <text class="txt h3" x="520" y="1135">玩过之后，他们真的理解了吗？</text>
+
+  <rect class="panel2" x="470" y="1170" rx="28" width="660" height="170"/>
+  <text class="pink2 body" x="495" y="1210">玩游戏（被动学习）</text>
+  <text class="muted small" x="500" y="1250">接受信息 · 情境体验 · 记忆有限</text>
+  <text class="pink2 body" x="850" y="1210">做游戏（主动建构）</text>
+  <text class="muted small" x="850" y="1250">解决问题 · 深度思考 · 结构化知识</text>
+  <rect x="650" y="1270" rx="18" width="300" height="48" class="chip"/>
+  <text class="txt small" x="800" y="1302" text-anchor="middle">“玩” ≠ “理解”</text>
+
+  <!-- 04 outward -->
+  <text class="pink h3" x="80" y="1105">04 向外延伸 / OUTWARD</text>
+  <circle cx="160" cy="1185" r="58" fill="#6a2048" stroke="#ff4f9a" stroke-width="2"/>
+  <text class="txt h2" x="160" y="1200" text-anchor="middle">?</text>
+  <rect class="panel" x="235" y="1135" rx="28" width="270" height="140"/>
+  <text class="txt body" x="265" y="1178">核心问题</text>
+  <text class="muted small" x="265" y="1218">如何让更多人通过“制作”</text>
+  <text class="muted small" x="265" y="1250">参与文化传承？</text>
+  <path class="arrow" d="M205 1185 L232 1185"/>
+
+  <!-- 05 co-creation -->
+  <text class="purple h2" x="500" y="1385">05 共创系统 / CO-CREATION</text>
+  <text class="muted body" x="500" y="1425">AI辅助文化游戏共创平台（漆问 2.0）</text>
+
+  <g transform="translate(110,1460)">
+    <rect class="panel2" x="0" y="0" rx="24" width="245" height="120"/>
+    <text class="txt body" x="122" y="38" text-anchor="middle">知识库</text>
+    <text class="muted small" x="122" y="72" text-anchor="middle">文化知识 · 工艺流程</text>
+    <text class="muted small" x="122" y="100" text-anchor="middle">素材约束 · 事实校验</text>
+
+    <rect class="panel2" x="280" y="0" rx="24" width="245" height="120"/>
+    <text class="txt body" x="402" y="38" text-anchor="middle">玩法共创</text>
+    <text class="muted small" x="402" y="72" text-anchor="middle">知识点 → 游戏机制</text>
+    <text class="muted small" x="402" y="100" text-anchor="middle">世界观 · 玩法讨论</text>
+
+    <rect class="panel2" x="560" y="0" rx="24" width="245" height="120"/>
+    <text class="txt body" x="682" y="38" text-anchor="middle">视觉与3D</text>
+    <text class="muted small" x="682" y="72" text-anchor="middle">道具 · 场景 · 3D资产</text>
+    <text class="muted small" x="682" y="100" text-anchor="middle">风格统一 · 错误控制</text>
+
+    <rect class="panel2" x="840" y="0" rx="24" width="245" height="120"/>
+    <text class="txt body" x="962" y="38" text-anchor="middle">代码生成</text>
+    <text class="muted small" x="962" y="72" text-anchor="middle">C# · 交互逻辑</text>
+    <text class="muted small" x="962" y="100" text-anchor="middle">Unity 集成</text>
+
+    <rect class="panel2" x="1120" y="0" rx="24" width="245" height="120"/>
+    <text class="txt body" x="1242" y="38" text-anchor="middle">音乐生成</text>
+    <text class="muted small" x="1242" y="72" text-anchor="middle">氛围 · BGM</text>
+    <text class="muted small" x="1242" y="100" text-anchor="middle">最终可玩游戏</text>
+
+    <path class="arrow" d="M245 60 L280 60"/>
+    <path class="arrow" d="M525 60 L560 60"/>
+    <path class="arrow" d="M805 60 L840 60"/>
+    <path class="arrow" d="M1085 60 L1120 60"/>
+  </g>
+</svg>

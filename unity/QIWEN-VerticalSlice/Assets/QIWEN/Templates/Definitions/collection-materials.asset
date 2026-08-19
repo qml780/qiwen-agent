@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b19f197170350d645aad29f98cbf60dc, type: 3}
+  m_Name: collection-materials
+  m_EditorClassIdentifier: QIWEN.GameTemplates::QIWEN.GameTemplates.GameTemplateDefinition
+  templateId: collection-materials
+  displayName: "\u6536\u96C6\xB7\u6750\u6599\u8FA8\u8BC6"
+  culturalAffordance: "\u6536\u96C6\u6F06\u6DB2\u3001\u80CE\u4F53\u4E0E\u7814\u78E8\u6750\u6599\uFF0C\u5E76\u8FA8\u8BA4\u6BCF\u79CD\u6750\u6599\u5728\u5DE5\u5E8F\u4E2D\u7684\u7528\u9014\u3002"
+  inputMode: "\u79FB\u52A8\u5E76\u89E6\u78B0\u6750\u6599\u6837\u672C"
+  winCondition: "\u6536\u96C6\u4E09\u79CD\u4E0D\u91CD\u590D\u6750\u6599"
+  componentType: QIWEN.GameTemplates.CollectionTemplate
+  schemaVersion: 1
