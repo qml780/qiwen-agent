@@ -4,7 +4,7 @@
 
 ## 架构
 
-- `apps/web`：Next.js 中文黑白工作室。
+- `apps/web`：Next.js 工作室。
 - `apps/api`：FastAPI、状态机、DeepSeek/媒体 Provider、研究导出。
 - `apps/bridge`：Node/TypeScript loopback Unity Bridge。
 - PostgreSQL：项目、版本、审批、对话、任务、Unity 回执和试玩记录。
